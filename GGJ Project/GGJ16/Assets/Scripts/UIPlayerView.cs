@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 // Intended to display Key Combo and Player Score
 
@@ -36,12 +36,18 @@ public class UIPlayerView : MonoBehaviour
 
 	void Update()
 	{
-		DisplayCombo();
-	}
+        //DisplayCombo();
+        Transform tCombo = keyComboContainer.transform;
+        for (int i = 0; i < playerCombo.curStep; i++)
+        {
+            Transform obj = tCombo.GetChild(i);
+            obj.transform.GetComponentsInChildren<Image>(true)[1].gameObject.SetActive(true);
+        }
+    }
 
-	void DisplayCombo()
+	public void DisplayCombo(List<KeyCode> keys)
 	{
-		KeyCode[] keyCombo = playerCombo.combo.ToArray();
+		KeyCode[] keyCombo = keys.ToArray();
 		Transform tCombo = keyComboContainer.transform;
 
 		// Remove all single key combo
@@ -72,10 +78,10 @@ public class UIPlayerView : MonoBehaviour
 			}
 		}
 
-		for(int i = 0; i < playerCombo.curStep; i++) 
+		/*for(int i = 0; i < playerCombo.curStep; i++) 
 		{
 			Transform obj = tCombo.GetChild(i);
 			obj.transform.GetComponentsInChildren<Image>(true)[1].gameObject.SetActive(true);
-		}
+		}*/
 	}
 }

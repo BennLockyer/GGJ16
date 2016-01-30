@@ -264,6 +264,12 @@ MonoBehaviour:
   dinnerParticles: {fileID: 2056430205}
   particleTime: 5
   timer: 0
+--- !u!114 &75481770 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11409144, guid: e7388b048711d2d4889bde33a09a64f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1402335356}
+  m_Script: {fileID: 11500000, guid: 570e71126f4b94340ab07fe057127394, type: 3}
 --- !u!1 &147982463
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +355,7 @@ MonoBehaviour:
   successChance: 70
   baseStepTime: 0.89
   stepTimeVariance: 1.39
+  myUI: {fileID: 75481770}
 --- !u!1 &190628152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3252,7 @@ MonoBehaviour:
   successChance: 70
   baseStepTime: 0.89
   stepTimeVariance: 1.39
+  myUI: {fileID: 2122806257}
 --- !u!1 &1834816699
 GameObject:
   m_ObjectHideFlags: 0
@@ -8151,3 +8159,9 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 61f79b464b1645d499392e1707e61a2a, type: 3}
   m_PrefabInternal: {fileID: 2062423750}
+--- !u!114 &2122806257 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11438514, guid: e7388b048711d2d4889bde33a09a64f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1402335356}
+  m_Script: {fileID: 11500000, guid: 570e71126f4b94340ab07fe057127394, type: 3}
