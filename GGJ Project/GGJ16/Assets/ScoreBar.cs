@@ -16,6 +16,6 @@ public class ScoreBar : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		_slider.value = _scoreManager.GetScorePercentage();
+		_slider.value = Mathf.Lerp(_slider.value, _scoreManager.GetScorePercentage(), Time.deltaTime * 0.5f);
 	}
 }
