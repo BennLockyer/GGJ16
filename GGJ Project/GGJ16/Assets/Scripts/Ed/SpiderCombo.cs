@@ -8,6 +8,7 @@ public class SpiderCombo : MonoBehaviour
     //VARIABLES
     public bool isAi = false;
     public GenerateCombos gen;
+    public ScoreManager score;
     public int player;
     public List<KeyCode> combo;
     private float timer;
@@ -15,6 +16,7 @@ public class SpiderCombo : MonoBehaviour
 
     public int health;
     private KeyCode keyPress;
+    public bool isKeyboard;
 
 	// Use this for initialization
 	void Start ()
@@ -25,66 +27,73 @@ public class SpiderCombo : MonoBehaviour
     void OnGUI()
     {
         //Has to be in OnGUI for some reason...
-        //keyPress = Event.current.keyCode;
+        if (isKeyboard)
+        {
+            keyPress = Event.current.keyCode;
+        }
     }
 
     //Workaround for broken keycode event
     void ChooseKey()
     {
-        if (player == 0)
+        if (!isKeyboard)
         {
-            if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+            if (player == 0)
             {
-                keyPress = KeyCode.Joystick1Button0;
+                if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+                {
+                    keyPress = KeyCode.Joystick1Button0;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+                {
+                    keyPress = KeyCode.Joystick1Button1;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick1Button2))
+                {
+                    keyPress = KeyCode.Joystick1Button2;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick1Button3))
+                {
+                    keyPress = KeyCode.Joystick1Button3;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick1Button4))
+                {
+                    keyPress = KeyCode.Joystick1Button4;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick1Button5))
+                {
+                    keyPress = KeyCode.Joystick1Button5;
+                }
             }
-            if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+            else
             {
-                keyPress = KeyCode.Joystick1Button1;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick1Button2))
-            {
-                keyPress = KeyCode.Joystick1Button2;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick1Button3))
-            {
-                keyPress = KeyCode.Joystick1Button3;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick1Button4))
-            {
-                keyPress = KeyCode.Joystick1Button4;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick1Button5))
-            {
-                keyPress = KeyCode.Joystick1Button5;
+                if (Input.GetKeyDown(KeyCode.Joystick2Button0))
+                {
+                    keyPress = KeyCode.Joystick2Button0;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick2Button1))
+                {
+                    keyPress = KeyCode.Joystick2Button1;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick2Button2))
+                {
+                    keyPress = KeyCode.Joystick2Button2;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick2Button3))
+                {
+                    keyPress = KeyCode.Joystick2Button3;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick2Button4))
+                {
+                    keyPress = KeyCode.Joystick2Button4;
+                }
+                if (Input.GetKeyDown(KeyCode.Joystick2Button5))
+                {
+                    keyPress = KeyCode.Joystick2Button5;
+                }
             }
         }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Joystick2Button0))
-            {
-                keyPress = KeyCode.Joystick2Button0;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick2Button1))
-            {
-                keyPress = KeyCode.Joystick2Button1;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick2Button2))
-            {
-                keyPress = KeyCode.Joystick2Button2;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick2Button3))
-            {
-                keyPress = KeyCode.Joystick2Button3;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick2Button4))
-            {
-                keyPress = KeyCode.Joystick2Button4;
-            }
-            if (Input.GetKeyDown(KeyCode.Joystick2Button5))
-            {
-                keyPress = KeyCode.Joystick2Button5;
-            }
-        }
+
         CheckInput();
     }
 
@@ -105,17 +114,24 @@ public class SpiderCombo : MonoBehaviour
                     //Debug.Log(timer);
                     if (combo[curStep] == keyPress)
                     {
+                        //Successful step
                         curStep++;
                         health++;
+                        score.HitCorrectButton(player);
+                        //Successful combo
                         if (curStep == combo.Count)
                         {
                             NewCombo();
+                            score.CompleteCombo(player, timer);
                         }
                         keyPress = KeyCode.None;
                     }
                     else
                     {
+                        //Missed step
                         health--;
+                        NewCombo();
+                        score.BreakCombo(player);
                         keyPress = KeyCode.None;
                     }
                 }
@@ -149,5 +165,8 @@ public class SpiderCombo : MonoBehaviour
         curStep = 0;
         timer = 0;
         //Debug.Log("Return");
+
+        //set if we're using keyboard or not depending on our player
+        isKeyboard = player == 0 ? gen.p1Keyboard : gen.p2Keyboard;
     }
 }
