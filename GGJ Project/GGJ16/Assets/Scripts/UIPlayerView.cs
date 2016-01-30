@@ -11,23 +11,33 @@ public class UIPlayerView : MonoBehaviour
 
 	[SerializeField]
 	private SpiderCombo playerCombo;
-	[SerializeField]
-	private GameObject keyDisplay;
-	private Text keyDisplayText;
-
 	private GameObject keyComboContainer;
 	private ObjectPool singleComboPool;
 
-	private GameObject scoreBar;
+	private Slider scoreBarSlider;
 
 	[SerializeField]
 	private ScoreManager scoreManager;
 
 	void Start() 
 	{
-		singleComboPool = GameObject.Find("SingleComboPool").GetComponent<ObjectPool>();
-		scoreBar = transform.FindChild("ScoreBar").gameObject;
-		keyComboContainer = transform.FindChild("ComboPanel").gameObject;
+		GameObject comboObjPool = GameObject.Find("/_UIStuff/SingleComboPool");
+		if(comboObjPool != null)
+			singleComboPool = comboObjPool.GetComponent<ObjectPool>();
+		else
+			Debug.LogError("Cannot find Single Combo Object Pool");
+
+		GameObject scoreBarObj = transform.Find("ScoreBar").gameObject;
+		if(scoreBarObj != null)
+		{
+			scoreBarSlider = scoreBarObj.GetComponent<Slider>();
+		}
+		else
+			Debug.LogError("Cannot find Score Bar Object");
+
+		keyComboContainer = transform.Find("ComboPanel").gameObject;
+		if(keyComboContainer == null)
+			Debug.LogError("Cannot find Score Bar Object");
 	}
 
 	void Update()
@@ -38,25 +48,26 @@ public class UIPlayerView : MonoBehaviour
 
 	void UpdateScoreBar()
 	{
-		Debug.Log("Player " + player + " score: " + scoreManager.GetScorePercentage(player));
-		scoreBar.GetComponent<Slider>().value = scoreManager.GetScorePercentage(player);
-
+		scoreBarSlider.value = scoreManager.GetScorePercentage(player);
 	}
 
 	void DisplayCombo()
 	{
 		KeyCode[] keyCombo = playerCombo.combo.ToArray();
+		Transform tCombo = keyComboContainer.transform;
 
-		for(int i = 0; i < keyComboContainer.transform.childCount; i++) 
+		// Remove all single key combo
+		for(int i = 0; i < tCombo.childCount; i++) 
 		{
-			GameObject obj = keyComboContainer.transform.GetChild(i).gameObject;
+			GameObject obj = tCombo.GetChild(i).gameObject;
 			obj.SetActive(false);
 		}
 
+		// Populate Key Combo Bar
 		for(int i = 0; i < keyCombo.Length; i++) 
 		{
 			GameObject obj = singleComboPool.GetAvailableObject();
-			obj.transform.SetParent(keyComboContainer.transform);
+			obj.transform.SetParent(tCombo);
 			obj.SetActive(true);
 
 			obj.GetComponentInChildren<Text>().text = keyCombo[i].ToString();
