@@ -2660,11 +2660,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: p1Keyboard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: p2Keyboard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: P2Inputs.Array.data[4]
