@@ -32,7 +32,7 @@ public class FemaleParticles : MonoBehaviour
             float angle = 0;
             if (randomInt == 0)
             {
-                if (scoreManager.currentScore < 0)
+                if (scoreManager.currentScore > 0)
                     angle = -20f;
                 else
                     angle = 20f;
@@ -41,7 +41,7 @@ public class FemaleParticles : MonoBehaviour
             }
             else
             {
-                if (scoreManager.currentScore > 0)
+                if (scoreManager.currentScore < 0)
                     angle = -20f;
                 else
                     angle = 20f;
