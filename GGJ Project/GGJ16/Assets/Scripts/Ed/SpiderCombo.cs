@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class SpiderCombo : MonoBehaviour
 {
     //VARIABLES
+    public bool isAi = false;
     public GenerateCombos gen;
     public int player;
     public List<KeyCode> combo;
@@ -125,8 +127,20 @@ public class SpiderCombo : MonoBehaviour
 	void Update ()
     {
         timer += Time.smoothDeltaTime;
-        ChooseKey();
+        if (isAi)
+        {
+            AiGameplay();
+        }
+        else
+        {
+            ChooseKey();
+        }
 	}
+
+    private void AiGameplay()
+    {
+        
+    }
 
     //get us a new combo, pass timer to help calculate score
     void NewCombo()
