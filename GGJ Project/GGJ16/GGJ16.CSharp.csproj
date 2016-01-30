@@ -64,9 +64,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ed\GenerateCombos.cs" />
     <Compile Include="Assets\Scripts\Ed\SpiderCombo.cs" />
+    <Compile Include="Assets\Scripts\Keymap.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\PunManager.cs" />
     <Compile Include="Assets\Scripts\PunnyText.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\UIPlayerView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
