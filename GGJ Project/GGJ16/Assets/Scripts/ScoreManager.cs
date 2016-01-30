@@ -25,10 +25,10 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        if (currentScore < -targetScore)
-            Debug.Log("Player 2 Wins!");
         if (currentScore > targetScore)
             Debug.Log("Player 1 Wins!");
+        if (currentScore < -targetScore)
+            Debug.Log("Player 2 Wins!");
     }
 
 	[ContextMenu("Player 1 Score")]
