@@ -95,7 +95,7 @@ GameObject:
   - 224: {fileID: 78607264}
   - 114: {fileID: 78607265}
   m_Layer: 5
-  m_Name: P2HealthBar
+  m_Name: ScoreBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,7 +279,7 @@ GameObject:
   - 224: {fileID: 233543267}
   - 114: {fileID: 233543268}
   m_Layer: 5
-  m_Name: P1HealthBar
+  m_Name: ScoreBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,8 +494,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570e71126f4b94340ab07fe057127394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: 1
   playerCombo: {fileID: 1064503666}
   keyDisplay: {fileID: 184278, guid: 06980b1513bf348eba77e52a423cb2cc, type: 2}
+  scoreManager: {fileID: 755594843}
 --- !u!114 &436079760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,6 +916,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!1 &755594841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 755594842}
+  - 114: {fileID: 755594843}
+  m_Layer: 0
+  m_Name: _GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &755594842
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 755594841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 486.42435, y: 179.38411, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!114 &755594843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 755594841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a6e472aa3784f9179f6d4c3e4442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScore: 100
+  correctButtonScore: 10
+  correctComboScore: 0
 --- !u!1 &1064503665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,8 +1662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570e71126f4b94340ab07fe057127394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: 0
   playerCombo: {fileID: 1716379455}
   keyDisplay: {fileID: 184278, guid: 06980b1513bf348eba77e52a423cb2cc, type: 2}
+  scoreManager: {fileID: 755594843}
 --- !u!114 &1853431278
 MonoBehaviour:
   m_ObjectHideFlags: 0
