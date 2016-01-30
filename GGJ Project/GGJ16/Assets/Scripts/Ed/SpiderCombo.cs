@@ -15,7 +15,6 @@ public class SpiderCombo : MonoBehaviour
     [HideInInspector]
     public int curStep;
 
-    public int health;
     private KeyCode keyPress;
     [HideInInspector]
     public bool isKeyboard;
@@ -129,7 +128,6 @@ public class SpiderCombo : MonoBehaviour
                     {
                         //Successful step
                         curStep++;
-                        health++;
                         score.HitCorrectButton(player);
                         //Successful combo
                         if (curStep == combo.Count)
@@ -142,7 +140,6 @@ public class SpiderCombo : MonoBehaviour
                     else
                     {
                         //Missed step
-                        health--;
                         score.BreakCombo(player);
                         NewCombo();
                         keyPress = KeyCode.None;
@@ -175,7 +172,6 @@ public class SpiderCombo : MonoBehaviour
             {
                 //Successful step
                 curStep++;
-                health++;
                 score.HitCorrectButton(player);
                 //Successful combo
                 if (curStep == combo.Count)
@@ -188,7 +184,6 @@ public class SpiderCombo : MonoBehaviour
             else
             {
                 //Missed step
-                health--;
                 score.BreakCombo(player);
                 NewCombo();
                 keyPress = KeyCode.None;

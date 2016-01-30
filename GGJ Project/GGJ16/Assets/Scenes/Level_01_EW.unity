@@ -340,7 +340,7 @@ MonoBehaviour:
   score: {fileID: 2119717897}
   player: 0
   combo: 
-  health: 0
+  curStep: 0
   isKeyboard: 0
   successChance: 0
   baseStepTime: 0
@@ -1237,6 +1237,14 @@ Prefab:
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 2119717897}
+    - target: {fileID: 11438514, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409144, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
   m_IsPrefabParent: 0
@@ -1483,7 +1491,7 @@ MonoBehaviour:
   score: {fileID: 2119717897}
   player: 1
   combo: 
-  health: 0
+  curStep: 0
   isKeyboard: 0
   successChance: 97
   baseStepTime: 1
@@ -6242,6 +6250,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 21677916}
   m_RootOrder: 1
+--- !u!1 &2119717895 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 157158, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+  m_PrefabInternal: {fileID: 1238350231}
 --- !u!114 &2119717896 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b,
@@ -6254,3 +6266,17 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1238350231}
   m_Script: {fileID: 11500000, guid: 6835a6e472aa3784f9179f6d4c3e4442, type: 3}
+--- !u!114 &2119717898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119717895}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acce158c0a025824cbafb0b70a8e7136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gen: {fileID: 2119717896}
+  p1: {fileID: 147982468}
+  p2: {fileID: 1726529525}
