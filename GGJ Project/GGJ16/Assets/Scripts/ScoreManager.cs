@@ -21,6 +21,18 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+	[ContextMenu("Player 1 Score")]
+    void Player1Score()
+    {
+		HitCorrectButton(0);
+    }
+
+    [ContextMenu("Player 2 Score")]
+	void Player2Score()
+    {
+		HitCorrectButton(1);
+    }
+
     public void HitCorrectButton(int player)
     {
         playerScore[player] += correctButtonScore * playerStreak[player];
@@ -39,6 +51,6 @@ public class ScoreManager : MonoBehaviour
 
     public float GetScorePercentage(int player)
     {
-        return (playerStreak[player] / targetScore);
+        return (playerScore[player] / targetScore);
     }
 }

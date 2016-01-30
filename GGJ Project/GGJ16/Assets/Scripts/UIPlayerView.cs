@@ -7,6 +7,9 @@ using System.Collections;
 public class UIPlayerView : MonoBehaviour 
 {
 	[SerializeField]
+	private int player;
+
+	[SerializeField]
 	private SpiderCombo playerCombo;
 	[SerializeField]
 	private GameObject keyDisplay;
@@ -15,15 +18,29 @@ public class UIPlayerView : MonoBehaviour
 	private GameObject keyComboContainer;
 	private ObjectPool singleComboPool;
 
+	private GameObject scoreBar;
+
+	[SerializeField]
+	private ScoreManager scoreManager;
+
 	void Start() 
 	{
 		singleComboPool = GameObject.Find("SingleComboPool").GetComponent<ObjectPool>();
+		scoreBar = transform.FindChild("ScoreBar").gameObject;
 		keyComboContainer = transform.FindChild("ComboPanel").gameObject;
 	}
 
 	void Update()
 	{
 		DisplayCombo();
+		UpdateScoreBar();
+	}
+
+	void UpdateScoreBar()
+	{
+		Debug.Log("Player " + player + " score: " + scoreManager.GetScorePercentage(player));
+		scoreBar.GetComponent<Slider>().value = scoreManager.GetScorePercentage(player);
+
 	}
 
 	void DisplayCombo()
