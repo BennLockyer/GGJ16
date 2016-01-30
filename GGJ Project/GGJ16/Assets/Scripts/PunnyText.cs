@@ -17,6 +17,7 @@ public class PunnyText : MonoBehaviour
 
     void Awake()
     {
+        startPosition = transform.position;
         punManager = GameObject.FindWithTag("PunManager").GetComponent<PunManager>();
     }
 
