@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class SpiderCombo : MonoBehaviour
 {
+    //VARIABLES
     public GenerateCombos gen;
     public int player;
     public List<KeyCode> combo;
@@ -22,16 +23,76 @@ public class SpiderCombo : MonoBehaviour
     void OnGUI()
     {
         //Has to be in OnGUI for some reason...
-        keyPress = Event.current.keyCode;
+        //keyPress = Event.current.keyCode;
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    //Workaround for broken keycode event
+    void ChooseKey()
     {
-        timer += Time.smoothDeltaTime;
+        if (player == 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+            {
+                keyPress = KeyCode.Joystick1Button0;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+            {
+                keyPress = KeyCode.Joystick1Button1;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick1Button2))
+            {
+                keyPress = KeyCode.Joystick1Button2;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick1Button3))
+            {
+                keyPress = KeyCode.Joystick1Button3;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick1Button4))
+            {
+                keyPress = KeyCode.Joystick1Button4;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick1Button5))
+            {
+                keyPress = KeyCode.Joystick1Button5;
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Joystick2Button0))
+            {
+                keyPress = KeyCode.Joystick2Button0;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick2Button1))
+            {
+                keyPress = KeyCode.Joystick2Button1;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick2Button2))
+            {
+                keyPress = KeyCode.Joystick2Button2;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick2Button3))
+            {
+                keyPress = KeyCode.Joystick2Button3;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick2Button4))
+            {
+                keyPress = KeyCode.Joystick2Button4;
+            }
+            if (Input.GetKeyDown(KeyCode.Joystick2Button5))
+            {
+                keyPress = KeyCode.Joystick2Button5;
+            }
+        }
+        CheckInput();
+    }
+
+    //Compare the keycode to the combo
+    void CheckInput()
+    {
         //Check there's a keypress
         if (keyPress != KeyCode.None)
         {
+            Debug.Log(keyPress.ToString());
             //make sure it's one of our keys
             bool hasKey = player == 0 ? gen.P1Inputs.Contains(keyPress) : gen.P2Inputs.Contains(keyPress);
             if (hasKey)
@@ -44,18 +105,27 @@ public class SpiderCombo : MonoBehaviour
                     {
                         curStep++;
                         health++;
-                        if(curStep == combo.Count)
+                        if (curStep == combo.Count)
                         {
                             NewCombo();
                         }
+                        keyPress = KeyCode.None;
                     }
                     else
                     {
                         health--;
+                        keyPress = KeyCode.None;
                     }
                 }
             }
         }
+    }
+	
+	// Update is called once per frame
+	void Update ()
+    {
+        timer += Time.smoothDeltaTime;
+        ChooseKey();
 	}
 
     //get us a new combo, pass timer to help calculate score
