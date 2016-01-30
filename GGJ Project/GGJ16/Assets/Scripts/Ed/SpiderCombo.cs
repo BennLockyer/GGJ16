@@ -18,10 +18,21 @@ public class SpiderCombo : MonoBehaviour
     private KeyCode keyPress;
     public bool isKeyboard;
 
+    //AI variables
+    [Range(0,100)]
+    public int successChance;
+    [Range(0,3)]
+    public float baseStepTime;
+    [Range(0,3)]
+    public float stepTimeVariance;
+    private float stepWait;
+    private float AiStepTimer;
+
 	// Use this for initialization
 	void Start ()
     {
         NewCombo();
+        SetAi();
 	}
 
     void OnGUI()
@@ -155,7 +166,40 @@ public class SpiderCombo : MonoBehaviour
 
     private void AiGameplay()
     {
-        
+        AiStepTimer += Time.smoothDeltaTime;
+        if(AiStepTimer >= stepWait)
+        {
+            if(UnityEngine.Random.Range(0,100) <= successChance)
+            {
+                //Successful step
+                curStep++;
+                health++;
+                score.HitCorrectButton(player);
+                //Successful combo
+                if (curStep == combo.Count)
+                {
+                    score.CompleteCombo(player, timer);
+                    NewCombo();
+                }
+                keyPress = KeyCode.None;
+            }
+            else
+            {
+                //Missed step
+                health--;
+                score.BreakCombo(player);
+                NewCombo();
+                keyPress = KeyCode.None;
+            }
+            SetAi();
+            AiStepTimer = 0;
+        }
+    }
+
+    void SetAi()
+    {
+        stepWait = UnityEngine.Random.Range(-stepTimeVariance, stepTimeVariance) + baseStepTime;
+        stepWait = Mathf.Abs(stepWait);
     }
 
     //get us a new combo, pass timer to help calculate score

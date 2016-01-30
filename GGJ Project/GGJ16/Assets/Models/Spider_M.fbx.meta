@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4b05ff1a32b1b7b4499196b98926bd2c
-timeCreated: 1454124890
+guid: 61f79b464b1645d499392e1707e61a2a
+timeCreated: 1454131983
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Male_Spider2
+    4300000: polySurface32
   materials:
     importMaterials: 1
     materialName: 0

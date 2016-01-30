@@ -52,7 +52,7 @@ public class UIPlayerView : MonoBehaviour
 
 	void UpdateScoreBar()
 	{
-		scoreBarSlider.value = scoreManager.GetScorePercentage(player);
+		scoreBarSlider.value = scoreManager.GetScorePercentage();
 	}
 
 	void DisplayCombo()
