@@ -32,6 +32,8 @@ public class SpiderCombo : MonoBehaviour
     private float stepWait;
     private float AiStepTimer;
 
+    public UIPlayerView myUI;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -119,6 +121,7 @@ public class SpiderCombo : MonoBehaviour
         if (keyPress != KeyCode.None)
         {
             Debug.Log(keyPress.ToString());
+            Debug.Log(combo[curStep]);
             //make sure it's one of our keys
             bool hasKey = player == 0 ? gen.P1Inputs.Contains(keyPress) : gen.P2Inputs.Contains(keyPress);
             if (hasKey)
@@ -221,5 +224,6 @@ public class SpiderCombo : MonoBehaviour
 
         //set if we're using keyboard or not depending on our player
         isKeyboard = player == 0 ? gen.p1Keyboard : gen.p2Keyboard;
+        myUI.DisplayCombo(combo);
     }
 }
