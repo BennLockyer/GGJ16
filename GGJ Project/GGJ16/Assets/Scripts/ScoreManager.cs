@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     public int correctButtonScore;
     public int correctComboScore; 
 
-    private float[] playerScore = new float[2];
+    public float[] playerScore = new float[2];
 
     private int[] playerStreak = new int[2];
 

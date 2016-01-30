@@ -325,9 +325,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAi: 0
   gen: {fileID: 588728669}
+  score: {fileID: 588728670}
   player: 0
   combo: 
   health: 0
+  isKeyboard: 0
 --- !u!1001 &183264184
 Prefab:
   m_ObjectHideFlags: 0
@@ -913,6 +915,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P1Inputs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 442578, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 486.42435
@@ -944,6 +954,66 @@ Prefab:
     - target: {fileID: 442578, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Keyboard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Keyboard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[4]
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[5]
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[6]
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[7]
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[8]
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[0]
+      value: 117
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[1]
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[2]
+      value: 111
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P2Inputs.Array.data[3]
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P1Inputs.Array.data[0]
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P1Inputs.Array.data[1]
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P1Inputs.Array.data[2]
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: P1Inputs.Array.data[3]
+      value: 114
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
@@ -1080,31 +1150,31 @@ Prefab:
       objectReference: {fileID: 588728670}
     - target: {fileID: 22412514, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22458902, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22428526, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22428526, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22479874, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1576,9 +1646,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAi: 0
   gen: {fileID: 588728669}
+  score: {fileID: 588728670}
   player: 1
   combo: 
   health: 0
+  isKeyboard: 0
 --- !u!1 &1834816699
 GameObject:
   m_ObjectHideFlags: 0

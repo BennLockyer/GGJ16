@@ -121,8 +121,8 @@ public class SpiderCombo : MonoBehaviour
                         //Successful combo
                         if (curStep == combo.Count)
                         {
-                            NewCombo();
                             score.CompleteCombo(player, timer);
+                            NewCombo();
                         }
                         keyPress = KeyCode.None;
                     }
@@ -130,8 +130,8 @@ public class SpiderCombo : MonoBehaviour
                     {
                         //Missed step
                         health--;
-                        NewCombo();
                         score.BreakCombo(player);
+                        NewCombo();
                         keyPress = KeyCode.None;
                     }
                 }
