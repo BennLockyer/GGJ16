@@ -13,12 +13,6 @@ public class UIPlayerView : MonoBehaviour
 	private SpiderCombo playerCombo;
 	private GameObject keyComboContainer;
 	private ObjectPool singleComboPool;
-
-	private Slider scoreBarSlider;
-
-	[SerializeField]
-	private ScoreManager scoreManager;
-
 	private Keymap keyMap;
 
 	void Start() 
@@ -28,14 +22,6 @@ public class UIPlayerView : MonoBehaviour
 			singleComboPool = comboObjPool.GetComponent<ObjectPool>();
 		else
 			Debug.LogError("Cannot find Single Combo Object Pool");
-
-		GameObject scoreBarObj = transform.Find("ScoreBar").gameObject;
-		if(scoreBarObj != null)
-		{
-			scoreBarSlider = scoreBarObj.GetComponent<Slider>();
-		}
-		else
-			Debug.LogError("Cannot find Score Bar Object");
 
 		keyComboContainer = transform.Find("ComboPanel").gameObject;
 		if(keyComboContainer == null)
@@ -47,12 +33,6 @@ public class UIPlayerView : MonoBehaviour
 	void Update()
 	{
 		DisplayCombo();
-		UpdateScoreBar();
-	}
-
-	void UpdateScoreBar()
-	{
-		scoreBarSlider.value = scoreManager.GetScorePercentage();
 	}
 
 	void DisplayCombo()
