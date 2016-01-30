@@ -19,6 +19,8 @@ public class UIPlayerView : MonoBehaviour
 	[SerializeField]
 	private ScoreManager scoreManager;
 
+	private Keymap keyMap;
+
 	void Start() 
 	{
 		GameObject comboObjPool = GameObject.Find("/_UIStuff/SingleComboPool");
@@ -38,6 +40,8 @@ public class UIPlayerView : MonoBehaviour
 		keyComboContainer = transform.Find("ComboPanel").gameObject;
 		if(keyComboContainer == null)
 			Debug.LogError("Cannot find Score Bar Object");
+
+		keyMap = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Keymap>();
 	}
 
 	void Update()
@@ -70,7 +74,16 @@ public class UIPlayerView : MonoBehaviour
 			obj.transform.SetParent(tCombo);
 			obj.SetActive(true);
 
-			obj.GetComponentInChildren<Text>().text = keyCombo[i].ToString();
+			if(keyMap.HaveKey(keyCombo[i]))
+			{
+				obj.GetComponent<Image>().sprite = keyMap.GetSprite(keyCombo[i]);
+				obj.GetComponentInChildren<Text>().text = string.Empty;
+			}
+			else
+			{
+				obj.GetComponent<Image>().sprite = null;
+				obj.GetComponentInChildren<Text>().text = keyCombo[i].ToString();
+			}
 		}
 	}
 }

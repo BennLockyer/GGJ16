@@ -12,10 +12,11 @@ public class SpiderCombo : MonoBehaviour
     public int player;
     public List<KeyCode> combo;
     private float timer;
-    private int curStep;
+    [HideInInspector]
+    public int curStep;
 
-    public int health;
     private KeyCode keyPress;
+    [HideInInspector]
     public bool isKeyboard;
 
     //AI variables
@@ -127,7 +128,6 @@ public class SpiderCombo : MonoBehaviour
                     {
                         //Successful step
                         curStep++;
-                        health++;
                         score.HitCorrectButton(player);
                         //Successful combo
                         if (curStep == combo.Count)
@@ -140,7 +140,6 @@ public class SpiderCombo : MonoBehaviour
                     else
                     {
                         //Missed step
-                        health--;
                         score.BreakCombo(player);
                         NewCombo();
                         keyPress = KeyCode.None;
@@ -173,7 +172,6 @@ public class SpiderCombo : MonoBehaviour
             {
                 //Successful step
                 curStep++;
-                health++;
                 score.HitCorrectButton(player);
                 //Successful combo
                 if (curStep == combo.Count)
@@ -186,7 +184,6 @@ public class SpiderCombo : MonoBehaviour
             else
             {
                 //Missed step
-                health--;
                 score.BreakCombo(player);
                 NewCombo();
                 keyPress = KeyCode.None;

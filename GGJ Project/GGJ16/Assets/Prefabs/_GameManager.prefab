@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 442578}
   - 114: {fileID: 11492234}
   - 114: {fileID: 11456506}
+  - 114: {fileID: 11480232}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: GameManager
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 486.42435, y: 179.38411, z: 0}
+  m_LocalPosition: {x: 486.42435, y: 179.38411, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40,8 +41,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a27d9e8fa014c547bb7bddf96bdb5b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  P1Inputs: 71000000770000006500000072000000
-  P2Inputs: 75000000690000006f00000070000000
+  P1Inputs: 7700000061000000730000007a00000031000000320000005e0100005f01000032000000320000003200000032000000
+  P2Inputs: 75000000690000006f000000700000007000000070000000700000007000000070000000700000007000000070000000
+  p1Keyboard: 1
+  p2Keyboard: 1
+--- !u!114 &11480232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0661537a816a4db3899badc44b9e140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyCodeList: 5e0100005f01000060010000610100006201000063010000720100007301000074010000750100007601000077010000
+  spritesList:
+  - {fileID: 21300000, guid: 6f267f1182aa1d846bdff7e409e61c4f, type: 3}
+  - {fileID: 21300000, guid: 0cd10b5b8701b824e90c1bf52ea45d01, type: 3}
+  - {fileID: 21300000, guid: d9f1216002e90f54bb14bd0f9ecc2f9d, type: 3}
+  - {fileID: 21300000, guid: af010ad051500e64a8fae5912fd41457, type: 3}
+  - {fileID: 21300000, guid: e3745ab972d24f84698fd62448c08485, type: 3}
+  - {fileID: 21300000, guid: 9026937fcf49de248b509fd798b0ac79, type: 3}
+  - {fileID: 21300000, guid: 6f267f1182aa1d846bdff7e409e61c4f, type: 3}
+  - {fileID: 21300000, guid: 0cd10b5b8701b824e90c1bf52ea45d01, type: 3}
+  - {fileID: 21300000, guid: d9f1216002e90f54bb14bd0f9ecc2f9d, type: 3}
+  - {fileID: 21300000, guid: af010ad051500e64a8fae5912fd41457, type: 3}
+  - {fileID: 21300000, guid: e3745ab972d24f84698fd62448c08485, type: 3}
+  - {fileID: 21300000, guid: 9026937fcf49de248b509fd798b0ac79, type: 3}
 --- !u!114 &11492234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,6 +84,7 @@ MonoBehaviour:
   targetScore: 100
   correctButtonScore: 10
   correctComboScore: 0
+  currentScore: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
