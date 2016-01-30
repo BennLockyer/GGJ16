@@ -40,7 +40,6 @@ public class UIPlayerView : MonoBehaviour
 	{
 		Debug.Log("Player " + player + " score: " + scoreManager.GetScorePercentage(player));
 		scoreBar.GetComponent<Slider>().value = scoreManager.GetScorePercentage(player);
-
 	}
 
 	void DisplayCombo()

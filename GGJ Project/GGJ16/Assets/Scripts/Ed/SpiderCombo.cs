@@ -8,6 +8,7 @@ public class SpiderCombo : MonoBehaviour
     //VARIABLES
     public bool isAi = false;
     public GenerateCombos gen;
+    public ScoreManager score;
     public int player;
     public List<KeyCode> combo;
     private float timer;
@@ -113,17 +114,24 @@ public class SpiderCombo : MonoBehaviour
                     //Debug.Log(timer);
                     if (combo[curStep] == keyPress)
                     {
+                        //Successful step
                         curStep++;
                         health++;
+                        score.HitCorrectButton(player);
+                        //Successful combo
                         if (curStep == combo.Count)
                         {
                             NewCombo();
+                            score.CompleteCombo(player, timer);
                         }
                         keyPress = KeyCode.None;
                     }
                     else
                     {
+                        //Missed step
                         health--;
+                        NewCombo();
+                        score.BreakCombo(player);
                         keyPress = KeyCode.None;
                     }
                 }
