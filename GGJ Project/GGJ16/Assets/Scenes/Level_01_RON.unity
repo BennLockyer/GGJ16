@@ -262,7 +262,7 @@ GameObject:
   - 114: {fileID: 147982468}
   m_Layer: 0
   m_Name: Spider_1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -892,9 +892,19 @@ Prefab:
       propertyPath: p2Keyboard
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: targetScore
+      value: 15000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1238350232 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11493222, guid: 592a9928b3d7d674ea999f8f38682c7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1238350231}
+  m_Script: {fileID: 11500000, guid: acce158c0a025824cbafb0b70a8e7136, type: 3}
 --- !u!1 &1400302875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,18 +1019,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 11409144, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: playerCombo
+    - target: {fileID: 11498668, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 147982468}
-    - target: {fileID: 11438514, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: playerCombo
+      objectReference: {fileID: 1238350232}
+    - target: {fileID: 11491446, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1726529525}
-    - target: {fileID: 11451418, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: _scoreManager
+      objectReference: {fileID: 1238350232}
+    - target: {fileID: 11453862, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2119717897}
+      objectReference: {fileID: 1238350232}
+    - target: {fileID: 11485812, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1238350232}
+    - target: {fileID: 11478414, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1238350232}
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMin.x
       value: 0
@@ -1032,38 +1050,6 @@ Prefab:
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22478990, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 350
-      objectReference: {fileID: 0}
-    - target: {fileID: 22490538, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 175
-      objectReference: {fileID: 0}
-    - target: {fileID: 22490538, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 350
-      objectReference: {fileID: 0}
-    - target: {fileID: 22497976, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 350
-      objectReference: {fileID: 0}
-    - target: {fileID: 22484572, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 175
-      objectReference: {fileID: 0}
-    - target: {fileID: 22484572, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 351
-      objectReference: {fileID: 0}
-    - target: {fileID: 22479874, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.0000036578049
-      objectReference: {fileID: 0}
-    - target: {fileID: 22479874, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 202.49998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
@@ -1143,6 +1129,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1583034171}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1636778378 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 115936, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+  m_PrefabInternal: {fileID: 1579294380}
 --- !u!1 &1641628302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,10 +1224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acce158c0a025824cbafb0b70a8e7136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gen: {fileID: 0}
-  p1: {fileID: 0}
-  p2: {fileID: 0}
-  menuUi: {fileID: 0}
+  gen: {fileID: 2119717896}
+  p1: {fileID: 147982468}
+  p2: {fileID: 1726529525}
+  menuUi: {fileID: 1636778378}
 --- !u!1 &1726529520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1242,7 @@ GameObject:
   - 114: {fileID: 1726529525}
   m_Layer: 0
   m_Name: Spider_2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
