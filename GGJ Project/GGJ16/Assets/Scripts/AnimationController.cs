@@ -4,11 +4,12 @@ using System.Collections;
 public class AnimationController : MonoBehaviour
 {
     private Animator anim;
-    public int currentAnim = -1;
+    public int currentAnim;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
+        currentAnim = -1;
     }
 
     void Update()
@@ -23,7 +24,8 @@ public class AnimationController : MonoBehaviour
     }
     public void PlayFailAnimation()
     {
-        StartCoroutine("PlayAnimation", 0);
+        Debug.Log("Playing Fail");
+        StartCoroutine("PlayAnimation", 7);
     }
 
     IEnumerator PlayAnimation(int animNumber)

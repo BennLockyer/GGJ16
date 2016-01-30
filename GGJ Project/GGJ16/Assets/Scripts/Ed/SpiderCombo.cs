@@ -11,7 +11,7 @@ public class SpiderCombo : MonoBehaviour
     public ScoreManager score;
     public int player;
     public List<KeyCode> combo;
-    private float animationDelay = 1.0f;
+    private float animationDelay = 1.5f;
     private float timer;
     [HideInInspector]
     public int curStep;
@@ -34,9 +34,12 @@ public class SpiderCombo : MonoBehaviour
 
     public UIPlayerView myUI;
 
+    private AnimationController animationController;
+
 	// Use this for initialization
 	void Start ()
     {
+        animationController = transform.GetChild(0).GetComponent<AnimationController>();
         StartCoroutine("NewCombo",false);
         SetAi();
 	}
@@ -139,6 +142,7 @@ public class SpiderCombo : MonoBehaviour
                         if (curStep == combo.Count)
                         {
                             score.CompleteCombo(player, timer);
+                            PlayAnimation(true);
                             StartCoroutine("NewCombo",true);
                         }
                         keyPress = KeyCode.None;
@@ -147,7 +151,8 @@ public class SpiderCombo : MonoBehaviour
                     {
                         //Missed step
                         score.BreakCombo(player);
-                        StartCoroutine("NewCombo",false);
+                        PlayAnimation(false);
+                        StartCoroutine("NewCombo", true);
                         keyPress = KeyCode.None;
                     }
                 }
@@ -186,6 +191,7 @@ public class SpiderCombo : MonoBehaviour
                 if (curStep == combo.Count)
                 {
                     score.CompleteCombo(player, timer);
+                    PlayAnimation(true);
                     StartCoroutine("NewCombo",true);
                 }
                 keyPress = KeyCode.None;
@@ -194,7 +200,8 @@ public class SpiderCombo : MonoBehaviour
             {
                 //Missed step
                 score.BreakCombo(player);
-                StartCoroutine("NewCombo",false);
+                PlayAnimation(false);
+                StartCoroutine("NewCombo", true);
                 keyPress = KeyCode.None;
             }
             SetAi();
@@ -206,6 +213,14 @@ public class SpiderCombo : MonoBehaviour
     {
         stepWait = UnityEngine.Random.Range(-stepTimeVariance, stepTimeVariance) + baseStepTime;
         stepWait = Mathf.Abs(stepWait);
+    }
+
+    void PlayAnimation(bool finishCombo)
+    {
+        if (finishCombo)
+            animationController.PlayRandomAnimation();
+        else
+            animationController.PlayFailAnimation();
     }
 
     //get us a new combo, pass timer to help calculate score
