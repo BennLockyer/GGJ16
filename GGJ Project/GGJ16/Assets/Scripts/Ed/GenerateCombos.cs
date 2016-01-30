@@ -26,6 +26,8 @@ public class GenerateCombos : MonoBehaviour
     {
         p1KeyCount = 4;
         p2KeyCount = 4;
+
+        Init();
     }
 
     public void Init()
