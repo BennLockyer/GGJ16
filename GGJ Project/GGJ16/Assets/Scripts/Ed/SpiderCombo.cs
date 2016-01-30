@@ -115,7 +115,7 @@ public class SpiderCombo : MonoBehaviour
         //Check there's a keypress
         if (keyPress != KeyCode.None)
         {
-            //Debug.Log(keyPress.ToString());
+            Debug.Log(keyPress.ToString());
             //make sure it's one of our keys
             bool hasKey = player == 0 ? gen.P1Inputs.Contains(keyPress) : gen.P2Inputs.Contains(keyPress);
             if (hasKey)

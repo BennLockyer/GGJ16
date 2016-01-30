@@ -6,6 +6,7 @@ using System;
 public class GenerateCombos : MonoBehaviour
 {
     //VARIABLES
+    //Really should have used a struct with two instances, oh well.
     //Combos
     private List<KeyCode> P1Combo;
     private List<KeyCode> P2Combo;
@@ -15,6 +16,9 @@ public class GenerateCombos : MonoBehaviour
     //Number of elements in combos
     private int p1KeyCount;
     private int p2KeyCount;
+    //Range of elements in combos
+    private int p1KeyRange;
+    private int p2KeyRange;
     //Difficulty level for players
     private int p1Difficulty;
     private int p2Difficulty;
@@ -22,10 +26,11 @@ public class GenerateCombos : MonoBehaviour
     public bool p1Keyboard;
     public bool p2Keyboard;
 
+    ScoreManager score;
+
     void Awake()
     {
-        p1KeyCount = 4;
-        p2KeyCount = 4;
+        score = GetComponent<ScoreManager>();
 
         Init();
     }
@@ -63,11 +68,15 @@ public class GenerateCombos : MonoBehaviour
         P2Inputs.Add(KeyCode.Joystick2Button3);
         P2Inputs.Add(KeyCode.Joystick2Button4);
         P2Inputs.Add(KeyCode.Joystick2Button5);
+
+        ConfigureDifficulty();
     }
 
     // Use this for initialization
     public List<KeyCode> Generate (int player)
     {
+        //ConfigureDifficulty();
+
         if (player == 0)
         {
             //Player one combo generation
@@ -75,7 +84,7 @@ public class GenerateCombos : MonoBehaviour
             int shift = p1Keyboard ? 0 : 6;
             for (int i = 0; i < p1KeyCount; i++)
             {
-                P1Combo.Add(P1Inputs[UnityEngine.Random.Range(shift, p1KeyCount + shift)]);
+                P1Combo.Add(P1Inputs[UnityEngine.Random.Range(shift, p1KeyRange + shift)]);
             }
             //Pass the combo to the player
             return P1Combo;
@@ -87,10 +96,82 @@ public class GenerateCombos : MonoBehaviour
             int shift = p2Keyboard ? 0 : 6;
             for (int i = 0; i < p2KeyCount; i++)
             {
-                P2Combo.Add(P2Inputs[UnityEngine.Random.Range(shift, p2KeyCount + shift)]);
+                P2Combo.Add(P2Inputs[UnityEngine.Random.Range(shift, p2KeyRange + shift)]);
             }
             //Pass the combo to the player
             return P2Combo;
         }
 	}
+
+    private void ConfigureDifficulty()
+    {
+        //get the range from the score controller
+        float upperLimit = score.targetScore;
+        float lowerLimit = -score.targetScore;
+        float div = (score.targetScore * 2) * 0.2f;
+        //and the current score
+        float currentScore = score.currentScore;
+
+        //compare the current score to divisions of 5 within the score range, shift difficulties accordingly
+        if(currentScore < lowerLimit + div)
+        {
+            Debug.Log("lowest");
+            p1Difficulty = 1;
+            p2Difficulty = 5;
+
+            p1KeyCount = 4;
+            p1KeyRange = 4;
+
+            p2KeyCount = 8;
+            p2KeyRange = 6;
+        }
+        else if(currentScore < lowerLimit + (div * 2))
+        {
+            Debug.Log("low");
+            p1Difficulty = 2;
+            p2Difficulty = 4;
+
+            p1KeyCount = 5;
+            p1KeyRange = 4;
+
+            p2KeyCount = 7;
+            p2KeyRange = 4;
+        }
+        else if(currentScore < lowerLimit + (div * 3))
+        {
+            Debug.Log("mid");
+            p1Difficulty = 3;
+            p2Difficulty = 3;
+
+            p1KeyCount = 6;
+            p1KeyRange = 4;
+
+            p2KeyCount = 6;
+            p2KeyRange = 4;
+        }
+        else if (currentScore < lowerLimit + (div * 4))
+        {
+            Debug.Log("high");
+            p1Difficulty = 4;
+            p2Difficulty = 2;
+
+            p1KeyCount = 7;
+            p1KeyRange = 4;
+
+            p2KeyCount = 5;
+            p2KeyRange = 4;
+        }
+        else
+        {
+            Debug.Log("highest");
+            p1Difficulty = 5;
+            p2Difficulty = 1;
+
+            p1KeyCount = 8;
+            p1KeyRange = 6;
+
+            p2KeyCount = 4;
+            p2KeyRange = 4;
+        }
+    }
 }
