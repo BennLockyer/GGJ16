@@ -12,10 +12,12 @@ public class SpiderCombo : MonoBehaviour
     public int player;
     public List<KeyCode> combo;
     private float timer;
-    private int curStep;
+    [HideInInspector]
+    public int curStep;
 
     public int health;
     private KeyCode keyPress;
+    [HideInInspector]
     public bool isKeyboard;
 
     //AI variables
