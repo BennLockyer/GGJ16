@@ -345,6 +345,7 @@ MonoBehaviour:
   successChance: 0
   baseStepTime: 0
   stepTimeVariance: 0
+  myUI: {fileID: 0}
 --- !u!1 &190628152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,11 +1178,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: P1Inputs.Array.data[4]
-      value: 49
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: P1Inputs.Array.data[5]
-      value: 50
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: P2Inputs.Array.data[4]
@@ -1382,15 +1383,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22441762, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22479874, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
       propertyPath: m_AnchorMin.y
@@ -2223,6 +2224,7 @@ MonoBehaviour:
   successChance: 97
   baseStepTime: 1
   stepTimeVariance: 0.5
+  myUI: {fileID: 0}
 --- !u!1 &1770282708
 GameObject:
   m_ObjectHideFlags: 0

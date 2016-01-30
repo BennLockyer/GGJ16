@@ -43,8 +43,8 @@ public class GenerateCombos : MonoBehaviour
         P1Inputs.Add(KeyCode.S);
         P1Inputs.Add(KeyCode.A);
         P1Inputs.Add(KeyCode.W);
-        P1Inputs.Add(KeyCode.Alpha1);
         P1Inputs.Add(KeyCode.Alpha2);
+        P1Inputs.Add(KeyCode.Alpha3);
         //Joystick
         P1Inputs.Add(KeyCode.Joystick1Button0);
         P1Inputs.Add(KeyCode.Joystick1Button1);
