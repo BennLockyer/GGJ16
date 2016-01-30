@@ -75,7 +75,7 @@ public class GenerateCombos : MonoBehaviour
     // Use this for initialization
     public List<KeyCode> Generate (int player)
     {
-        //ConfigureDifficulty();
+        ConfigureDifficulty();
 
         if (player == 0)
         {
