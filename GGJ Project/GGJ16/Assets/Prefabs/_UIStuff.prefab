@@ -141,6 +141,7 @@ GameObject:
   - 224: {fileID: 22441762}
   - 222: {fileID: 22286928}
   - 114: {fileID: 11452142}
+  - 114: {fileID: 11478928}
   m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
@@ -386,7 +387,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: 0
   playerCombo: {fileID: 0}
-  scoreManager: {fileID: 0}
 --- !u!114 &11413906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -427,7 +427,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: 1
   playerCombo: {fileID: 0}
-  scoreManager: {fileID: 0}
 --- !u!114 &11450320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -612,6 +611,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 184278, guid: 06980b1513bf348eba77e52a423cb2cc, type: 2}
+--- !u!114 &11478928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06aaa974e1246476d877227ec11ab893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreManager: {fileID: 0}
 --- !u!114 &11485608
 MonoBehaviour:
   m_ObjectHideFlags: 1
