@@ -23,7 +23,7 @@ public class FemaleLookAt : MonoBehaviour
         {
             transform.eulerAngles = startRotation;
         }
-        else if(scoreManager.currentScore > 0)
+        else if(scoreManager.currentScore < 0)
         {
             transform.LookAt(player1pos);
             transform.eulerAngles = new Vector3(startRotation.x, transform.eulerAngles.y, startRotation.z);
