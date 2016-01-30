@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Ed\GenerateCombos.cs" />
     <Compile Include="Assets\Scripts\Ed\MenuSystem.cs" />
     <Compile Include="Assets\Scripts\Ed\SpiderCombo.cs" />
+    <Compile Include="Assets\Scripts\Ed\TitleHandler.cs" />
     <Compile Include="Assets\Scripts\FemaleLookAt.cs" />
     <Compile Include="Assets\Scripts\FemaleParticles.cs" />
     <Compile Include="Assets\Scripts\Keymap.cs" />
