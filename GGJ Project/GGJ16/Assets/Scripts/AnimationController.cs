@@ -25,6 +25,7 @@ public class AnimationController : MonoBehaviour
     public void PlayFailAnimation()
     {
         Debug.Log("Playing Fail");
+        Camera.main.GetComponent<CameraShake>().MediumShake();
         StartCoroutine("PlayAnimation", 7);
     }
 
