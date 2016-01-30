@@ -14,7 +14,7 @@ public class UIPlayerView : MonoBehaviour
 	private ObjectPool singleComboPool;
 	private Keymap keyMap;
 
-	void Start() 
+	void Awake() 
 	{
 		GameObject comboObjPool = GameObject.Find("/_UIStuff/SingleComboPool");
 		if(comboObjPool != null)
@@ -48,7 +48,8 @@ public class UIPlayerView : MonoBehaviour
 	public void DisplayCombo(List<KeyCode> keys)
 	{
 		KeyCode[] keyCombo = keys.ToArray();
-		Transform tCombo = keyComboContainer.transform;
+        if (keyComboContainer == null) keyComboContainer = transform.Find("ComboPanel").gameObject;
+        Transform tCombo = keyComboContainer.transform;
 
 		// Remove all single key combo
 		for(int i = 0; i < tCombo.childCount; i++) 
