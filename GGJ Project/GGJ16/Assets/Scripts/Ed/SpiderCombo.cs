@@ -11,9 +11,12 @@ public class SpiderCombo : MonoBehaviour
     public ScoreManager score;
     public int player;
     public List<KeyCode> combo;
+    private float animationDelay = 1.0f;
     private float timer;
     [HideInInspector]
     public int curStep;
+
+    private bool acceptInput = true;
 
     private KeyCode keyPress;
     [HideInInspector]
@@ -32,7 +35,7 @@ public class SpiderCombo : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        NewCombo();
+        StartCoroutine("NewCombo",false);
         SetAi();
 	}
 
@@ -133,7 +136,7 @@ public class SpiderCombo : MonoBehaviour
                         if (curStep == combo.Count)
                         {
                             score.CompleteCombo(player, timer);
-                            NewCombo();
+                            StartCoroutine("NewCombo",true);
                         }
                         keyPress = KeyCode.None;
                     }
@@ -141,7 +144,7 @@ public class SpiderCombo : MonoBehaviour
                     {
                         //Missed step
                         score.BreakCombo(player);
-                        NewCombo();
+                        StartCoroutine("NewCombo",false);
                         keyPress = KeyCode.None;
                     }
                 }
@@ -153,6 +156,9 @@ public class SpiderCombo : MonoBehaviour
 	void Update ()
     {
         timer += Time.smoothDeltaTime;
+
+        if (!acceptInput) return;
+
         if (isAi)
         {
             AiGameplay();
@@ -177,7 +183,7 @@ public class SpiderCombo : MonoBehaviour
                 if (curStep == combo.Count)
                 {
                     score.CompleteCombo(player, timer);
-                    NewCombo();
+                    StartCoroutine("NewCombo",true);
                 }
                 keyPress = KeyCode.None;
             }
@@ -185,7 +191,7 @@ public class SpiderCombo : MonoBehaviour
             {
                 //Missed step
                 score.BreakCombo(player);
-                NewCombo();
+                StartCoroutine("NewCombo",false);
                 keyPress = KeyCode.None;
             }
             SetAi();
@@ -200,11 +206,17 @@ public class SpiderCombo : MonoBehaviour
     }
 
     //get us a new combo, pass timer to help calculate score
-    void NewCombo()
+    IEnumerator NewCombo(bool needsDelay)
     {
+        if (needsDelay)
+        {
+            acceptInput = false;
+            yield return new WaitForSeconds(animationDelay);
+        }
         combo = gen.Generate(player);
         curStep = 0;
         timer = 0;
+        acceptInput = true;
         //Debug.Log("Return");
 
         //set if we're using keyboard or not depending on our player
