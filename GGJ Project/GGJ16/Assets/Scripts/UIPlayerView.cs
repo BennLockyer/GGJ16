@@ -8,8 +8,7 @@ public class UIPlayerView : MonoBehaviour
 {
 	[SerializeField]
 	private int player;
-
-	[SerializeField]
+    
 	private SpiderCombo playerCombo;
 	private GameObject keyComboContainer;
 	private ObjectPool singleComboPool;
@@ -28,7 +27,12 @@ public class UIPlayerView : MonoBehaviour
 			Debug.LogError("Cannot find Score Bar Object");
 
 		keyMap = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Keymap>();
-	}
+
+        if (player == 0)
+            playerCombo = GameObject.FindWithTag("Player1").GetComponent<SpiderCombo>();
+        else
+            playerCombo = GameObject.FindWithTag("Player2").GetComponent<SpiderCombo>();
+    }
 
 	void Update()
 	{

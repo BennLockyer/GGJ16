@@ -4,13 +4,13 @@ using System.Collections;
 
 public class ScoreBar : MonoBehaviour 
 {
-	[SerializeField]
 	private ScoreManager _scoreManager;
 	private Slider _slider;
 
 	void Start()
 	{
 		_slider = gameObject.GetComponent<Slider>();
+        _scoreManager = GameObject.FindWithTag("GameManager").GetComponent<ScoreManager>();
 	}
 
 	// Update is called once per frame
