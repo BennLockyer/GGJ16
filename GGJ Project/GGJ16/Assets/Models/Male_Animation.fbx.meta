@@ -1,0 +1,1551 @@
+fileFormatVersion: 2
+guid: 8be1052b17082364194406d5842bab73
+timeCreated: 1454190972
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bottom_Spine
+    100002: Head
+    100004: L_1_Inner
+    100006: L_2_End
+    100008: L_2_Inner
+    100010: L_2_Mid
+    100012: L_2_Tip
+    100014: L_2_Top
+    100016: L_3_End
+    100018: L_3_Inner
+    100020: L_3_Mid
+    100022: L_3_Tip
+    100024: L_3_Top
+    100026: L_4_End
+    100028: L_4_End 1
+    100030: L_4_Inner
+    100032: L_4_Mid
+    100034: L_4_Mid 1
+    100036: L_4_Tip
+    100038: L_4_Tip 1
+    100040: L_4_Top
+    100042: L_4_Top 1
+    100044: L_Big_Eye
+    100046: L_Big_Eye_Tip
+    100048: L_Eye_Group
+    100050: L_Man_End
+    100052: L_Man_Mid
+    100054: L_Man_Tip
+    100056: L_Man_top
+    100058: L_Small_Eye
+    100060: L_Small_Eye_Tip
+    100062: //RootNode
+    100064: Mid_Spine
+    100066: Mouth_Group
+    100068: Player1
+    100070: R_1_End
+    100072: R_1_Inner
+    100074: R_1_Mid
+    100076: R_1_Tip
+    100078: R_1_Top
+    100080: R_2_End
+    100082: R_2_Inner
+    100084: R_2_Mid
+    100086: R_2_Tip
+    100088: R_2_Top
+    100090: R_3_End
+    100092: R_3_Inner
+    100094: R_3_Mid
+    100096: R_3_Tip
+    100098: R_3_Top
+    100100: R_4_End2
+    100102: R_4_Inner3
+    100104: R_4_Mid2
+    100106: R_4_Tip2
+    100108: R_4_Top2
+    100110: R_Big_Eye
+    100112: R_Big_Eye_Tip
+    100114: R_Eye_Group
+    100116: R_Man_End
+    100118: R_Man_Mid
+    100120: R_Man_Tip
+    100122: R_Man_top
+    100124: R_Small_Eye
+    100126: R_Smalll_Eye_Tip
+    100128: Root
+    100130: Tail_End
+    100132: Tail_Mid
+    100134: Tail_Tip
+    100136: Tail_Top
+    400000: Bottom_Spine
+    400002: Head
+    400004: L_1_Inner
+    400006: L_2_End
+    400008: L_2_Inner
+    400010: L_2_Mid
+    400012: L_2_Tip
+    400014: L_2_Top
+    400016: L_3_End
+    400018: L_3_Inner
+    400020: L_3_Mid
+    400022: L_3_Tip
+    400024: L_3_Top
+    400026: L_4_End
+    400028: L_4_End 1
+    400030: L_4_Inner
+    400032: L_4_Mid
+    400034: L_4_Mid 1
+    400036: L_4_Tip
+    400038: L_4_Tip 1
+    400040: L_4_Top
+    400042: L_4_Top 1
+    400044: L_Big_Eye
+    400046: L_Big_Eye_Tip
+    400048: L_Eye_Group
+    400050: L_Man_End
+    400052: L_Man_Mid
+    400054: L_Man_Tip
+    400056: L_Man_top
+    400058: L_Small_Eye
+    400060: L_Small_Eye_Tip
+    400062: //RootNode
+    400064: Mid_Spine
+    400066: Mouth_Group
+    400068: Player1
+    400070: R_1_End
+    400072: R_1_Inner
+    400074: R_1_Mid
+    400076: R_1_Tip
+    400078: R_1_Top
+    400080: R_2_End
+    400082: R_2_Inner
+    400084: R_2_Mid
+    400086: R_2_Tip
+    400088: R_2_Top
+    400090: R_3_End
+    400092: R_3_Inner
+    400094: R_3_Mid
+    400096: R_3_Tip
+    400098: R_3_Top
+    400100: R_4_End2
+    400102: R_4_Inner3
+    400104: R_4_Mid2
+    400106: R_4_Tip2
+    400108: R_4_Top2
+    400110: R_Big_Eye
+    400112: R_Big_Eye_Tip
+    400114: R_Eye_Group
+    400116: R_Man_End
+    400118: R_Man_Mid
+    400120: R_Man_Tip
+    400122: R_Man_top
+    400124: R_Small_Eye
+    400126: R_Smalll_Eye_Tip
+    400128: Root
+    400130: Tail_End
+    400132: Tail_Mid
+    400134: Tail_Tip
+    400136: Tail_Top
+    2300000: Player1
+    3300000: Player1
+    4300000: Player1
+    7400000: RightLegMount
+    7400002: Idle
+    7400004: LeftLegMoung
+    7400006: DanceShuffle
+    7400008: Fail
+    7400010: TimeDance
+    7400012: Lean
+    7400014: StandOff
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Player1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: RightLegMount
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: LeftLegMoung
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: DanceShuffle
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: Fail
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: TimeDance
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: Lean
+      takeName: Take 001
+      firstFrame: 250
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: StandOff
+      takeName: Take 001
+      firstFrame: 290
+      lastFrame: 310
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Player1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Mid_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Mid_Spine/Bottom_Spine/Tail_Top/Tail_Mid/Tail_End/Tail_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Big_Eye/L_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/L_Eye_Group/L_Small_Eye/L_Small_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/L_Man_top/L_Man_Mid/L_Man_End/L_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End
+        weight: 1
+      - path: Root/Mid_Spine/Head/Mouth_Group/R_Man_top/R_Man_Mid/R_Man_End/R_Man_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Big_Eye/R_Big_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye
+        weight: 1
+      - path: Root/Mid_Spine/Head/R_Eye_Group/R_Small_Eye/R_Smalll_Eye_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End
+        weight: 1
+      - path: Root/Mid_Spine/L_1_Inner/L_4_Top/L_4_Mid/L_4_End/L_4_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End
+        weight: 1
+      - path: Root/Mid_Spine/L_2_Inner/L_2_Top/L_2_Mid/L_2_End/L_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End
+        weight: 1
+      - path: Root/Mid_Spine/L_3_Inner/L_3_Top/L_3_Mid/L_3_End/L_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1
+        weight: 1
+      - path: Root/Mid_Spine/L_4_Inner/L_4_Top 1/L_4_Mid 1/L_4_End 1/L_4_Tip 1
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End
+        weight: 1
+      - path: Root/Mid_Spine/R_1_Inner/R_1_Top/R_1_Mid/R_1_End/R_1_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End
+        weight: 1
+      - path: Root/Mid_Spine/R_2_Inner/R_2_Top/R_2_Mid/R_2_End/R_2_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End
+        weight: 1
+      - path: Root/Mid_Spine/R_3_Inner/R_3_Top/R_3_Mid/R_3_End/R_3_Tip
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2
+        weight: 1
+      - path: Root/Mid_Spine/R_4_Inner3/R_4_Top2/R_4_Mid2/R_4_End2/R_4_Tip2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 1
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
