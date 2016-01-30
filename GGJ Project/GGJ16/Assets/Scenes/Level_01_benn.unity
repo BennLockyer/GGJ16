@@ -344,7 +344,7 @@ MonoBehaviour:
   score: {fileID: 588728670}
   player: 0
   combo: 
-  health: 0
+  curStep: 0
   isKeyboard: 0
   successChance: 0
   baseStepTime: 0
@@ -386,7 +386,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 190628152}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 63922997ff0b1dc478d5831674953e76, type: 2}
@@ -1142,7 +1142,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400302875}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 63922997ff0b1dc478d5831674953e76, type: 2}
@@ -1488,7 +1488,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1583034171}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 63922997ff0b1dc478d5831674953e76, type: 2}
@@ -1682,7 +1682,7 @@ MonoBehaviour:
   score: {fileID: 588728670}
   player: 1
   combo: 
-  health: 0
+  curStep: 0
   isKeyboard: 0
   successChance: 0
   baseStepTime: 0
@@ -1724,7 +1724,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1834816699}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 63922997ff0b1dc478d5831674953e76, type: 2}

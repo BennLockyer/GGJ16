@@ -47,9 +47,9 @@ public class ScoreManager : MonoBehaviour
     {
         //playerScore[player] += correctButtonScore * playerStreak[player];
         if (player == 0)
-            currentScore -= correctButtonScore * playerStreak[0];
+            currentScore += correctButtonScore * playerStreak[0];
         else
-            currentScore += correctButtonScore * playerStreak[1];
+            currentScore -= correctButtonScore * playerStreak[1];
     }
 
     public void CompleteCombo(int player, float time)
@@ -57,9 +57,9 @@ public class ScoreManager : MonoBehaviour
         ++playerStreak[player];
         // playerScore[player] += (correctComboScore / time);
         if (player == 0)
-            currentScore -= (correctComboScore / time);
-        else
             currentScore += (correctComboScore / time);
+        else
+            currentScore -= (correctComboScore / time);
     }
 
     public void BreakCombo(int player)
