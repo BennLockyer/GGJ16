@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11492234}
   - 114: {fileID: 11456506}
   - 114: {fileID: 11480232}
+  - 114: {fileID: 11493222}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: GameManager
@@ -85,6 +86,21 @@ MonoBehaviour:
   correctButtonScore: 10
   correctComboScore: 0
   currentScore: 0
+--- !u!114 &11493222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acce158c0a025824cbafb0b70a8e7136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gen: {fileID: 11456506}
+  p1: {fileID: 0}
+  p2: {fileID: 0}
+  menuUi: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
