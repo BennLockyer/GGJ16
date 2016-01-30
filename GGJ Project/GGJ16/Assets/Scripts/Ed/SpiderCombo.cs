@@ -27,7 +27,7 @@ public class SpiderCombo : MonoBehaviour
     void OnGUI()
     {
         //Has to be in OnGUI for some reason...
-        if (isKeyboard)
+        if (isKeyboard && Event.current.isKey)
         {
             keyPress = Event.current.keyCode;
         }
