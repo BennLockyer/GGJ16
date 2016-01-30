@@ -64,6 +64,8 @@ public class UIPlayerView : MonoBehaviour
 		for(int i = 0; i < tCombo.childCount; i++) 
 		{
 			GameObject obj = tCombo.GetChild(i).gameObject;
+			// This is so fucking retarded - GetComponentInChildren get component from the parent as well
+			obj.transform.GetComponentsInChildren<Image>(true)[1].gameObject.SetActive(false);
 			obj.SetActive(false);
 		}
 
@@ -84,6 +86,12 @@ public class UIPlayerView : MonoBehaviour
 				obj.GetComponent<Image>().sprite = null;
 				obj.GetComponentInChildren<Text>().text = keyCombo[i].ToString();
 			}
+		}
+
+		for(int i = 0; i < playerCombo.curStep; i++) 
+		{
+			Transform obj = tCombo.GetChild(i);
+			obj.transform.GetComponentsInChildren<Image>(true)[1].gameObject.SetActive(true);
 		}
 	}
 }
