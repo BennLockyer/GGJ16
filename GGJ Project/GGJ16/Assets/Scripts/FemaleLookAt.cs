@@ -8,6 +8,8 @@ public class FemaleLookAt : MonoBehaviour
 
     private Vector3 startRotation;
 
+    public bool runLookat = true;
+
     private ScoreManager scoreManager;
     void Awake()
     {
@@ -19,6 +21,8 @@ public class FemaleLookAt : MonoBehaviour
 	
     void Update ()
     {
+        if (!runLookat) return;
+
 	    if(scoreManager.currentScore == 0)
         {
             transform.eulerAngles = startRotation;

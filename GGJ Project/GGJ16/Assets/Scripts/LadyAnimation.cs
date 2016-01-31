@@ -36,7 +36,6 @@ public class LadyAnimation : MonoBehaviour
             yield return new WaitForEndOfFrame();
             info = anim.GetCurrentAnimatorStateInfo(0);
         }
-
         currentAnim = 0;
     }
 

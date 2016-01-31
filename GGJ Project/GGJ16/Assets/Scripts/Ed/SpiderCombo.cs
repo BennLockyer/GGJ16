@@ -144,12 +144,12 @@ public class SpiderCombo : MonoBehaviour
         //Check there's a keypress
         if (keyPress != KeyCode.None)
         {
-            Debug.Log(keyPress.ToString());
-            Debug.Log(combo[curStep]);
+            //Debug.Log(combo[curStep]);
             //make sure it's one of our keys
             bool hasKey = player == 0 ? gen.P1Inputs.Contains(keyPress) : gen.P2Inputs.Contains(keyPress);
             if (hasKey)
             {
+                Debug.Log("Pressed Key " + keyPress.ToString() + "Intended Key " + combo[curStep]);
                 //step through the combo
                 if (curStep < combo.Count)
                 {
@@ -275,6 +275,7 @@ public class SpiderCombo : MonoBehaviour
 
         //set if we're using keyboard or not depending on our player
         isKeyboard = player == 0 ? gen.p1Keyboard : gen.p2Keyboard;
+        yield return null;
         myUI.DisplayCombo(combo);
         yield return new WaitForSeconds(0.5f);
         acceptInput = true;

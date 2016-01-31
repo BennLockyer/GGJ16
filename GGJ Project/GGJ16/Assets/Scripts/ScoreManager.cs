@@ -26,9 +26,9 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         if (currentScore > targetScore)
-            Debug.Log("Player 1 Wins!");
+            GetComponent<WinState>().GameOver(0);
         if (currentScore < -targetScore)
-            Debug.Log("Player 2 Wins!");
+            GetComponent<WinState>().GameOver(1);
     }
 
 	[ContextMenu("Player 1 Score")]

@@ -37,6 +37,17 @@ public class GenerateCombos : MonoBehaviour
         score = GetComponent<ScoreManager>();
         ListJoystickButtons();
         Init();
+        StartCoroutine("UpdateDifficulty");
+    }
+
+    IEnumerator UpdateDifficulty()
+    {
+        if (scaleDifficulty)
+        {
+            ConfigureDifficulty();
+        }
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine("UpdateDifficulty");
     }
 
     void ListJoystickButtons()
@@ -149,11 +160,6 @@ public class GenerateCombos : MonoBehaviour
     // Use this for initialization
     public List<KeyCode> Generate (int player)
     {
-        if (scaleDifficulty)
-        {
-            ConfigureDifficulty();
-        }
-
         if (player == 0)
         {
             //Player one combo generation
