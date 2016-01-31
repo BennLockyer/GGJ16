@@ -1039,6 +1039,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &485920596 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116450, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
+  m_PrefabInternal: {fileID: 485920595}
 --- !u!23 &537629777 stripped
 MeshRenderer:
   m_PrefabParentObject: {fileID: 2300002, guid: b9b015784e1aaa143bffe6f91b81bff7,
@@ -1118,7 +1122,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4844,9 +4848,37 @@ Prefab:
       propertyPath: beginMenu
       value: 
       objectReference: {fileID: 1319823844}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: scaleDifficulty
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1238350232 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 157158, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+  m_PrefabInternal: {fileID: 1238350231}
+--- !u!114 &1238350233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1238350232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f46814b7869cd940b88286de4f1a13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spiderOne: {fileID: 147982468}
+  spiderTwo: {fileID: 1726529525}
+  UIObject: {fileID: 485920596}
+  heartParticles: {fileID: 1901933295}
+  dinnerParticles: {fileID: 2056430205}
+  ladySpider: {fileID: 21677916}
+  playerOne: {fileID: 147982467}
+  playerTwo: {fileID: 1726529524}
+  winParticles: {fileID: 1065214314}
 --- !u!1 &1319823844 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 173140, guid: e7388b048711d2d4889bde33a09a64f4, type: 2}
