@@ -97,6 +97,7 @@ GameObject:
   - 92: {fileID: 16943650}
   - 124: {fileID: 16943649}
   - 81: {fileID: 16943648}
+  - 114: {fileID: 16943653}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -171,6 +172,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &16943653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16943647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0c59521459c4d45bd85f5977bcada5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &21677912
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +260,7 @@ Transform:
   m_Children:
   - {fileID: 1349995865}
   m_Father: {fileID: 790062827}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &21677917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +484,7 @@ Transform:
   m_Children:
   - {fileID: 135442554}
   m_Father: {fileID: 790062827}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &147982468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,6 +700,10 @@ Prefab:
       propertyPath: m_Name
       value: Environment_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: b9b015784e1aaa143bffe6f91b81bff7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 258cf935d8a44eb449705de9599554b0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9b015784e1aaa143bffe6f91b81bff7, type: 3}
   m_IsPrefabParent: 0
@@ -2688,8 +2704,8 @@ Transform:
   m_Children:
   - {fileID: 2056430208}
   - {fileID: 1901933298}
-  - {fileID: 21677916}
   - {fileID: 147982467}
+  - {fileID: 21677916}
   - {fileID: 1726529524}
   - {fileID: 922630638}
   - {fileID: 1641628306}
@@ -2824,7 +2840,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: 8be1052b17082364194406d5842bab73, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: 8be1052b17082364194406d5842bab73, type: 3}
       propertyPath: m_LocalScale.x

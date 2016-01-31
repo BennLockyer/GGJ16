@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Prefabs\ScoreBar.cs" />
     <Compile Include="Assets\Scripts\AnimationController.cs" />
+    <Compile Include="Assets\Scripts\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Ed\GenerateCombos.cs" />
     <Compile Include="Assets\Scripts\Ed\MenuSystem.cs" />
     <Compile Include="Assets\Scripts\Ed\SpiderCombo.cs" />
