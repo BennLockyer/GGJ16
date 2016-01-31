@@ -13,7 +13,7 @@ public class MenuSystem : MonoBehaviour
 	void Start ()
     {
         //show UI elements
-		menuToggles = menuUi.GetComponentsInChildren<ToggleButton>();
+		menuToggles = menuUi.transform.Find("PauseMenuPanel/ButtonList").GetComponentsInChildren<ToggleButton>();
 	}
 	
 	// Update is called once per frame
@@ -25,6 +25,12 @@ public class MenuSystem : MonoBehaviour
 			menuUi.SetActive(!menuUi.activeInHierarchy);
 			Time.timeScale = (menuUi.activeInHierarchy) ? 0 : 1;
     	}
+    }
+
+    public void ContinueGame()
+    {
+		menuUi.SetActive(false);
+		Time.timeScale = (menuUi.activeInHierarchy) ? 0 : 1;
     }
 
     public void TogglePlayerKeyboard(int player)
