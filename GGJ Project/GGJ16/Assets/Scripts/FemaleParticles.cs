@@ -9,10 +9,13 @@ public class FemaleParticles : MonoBehaviour
     public float particleTime;
 
     private ScoreManager scoreManager;
+    private LadyAnimation ladyAnimation;
+
     public float timer;
     void Awake()
     {
         scoreManager = GameObject.FindWithTag("GameManager").GetComponent<ScoreManager>();
+        ladyAnimation = transform.GetChild(0).GetComponent<LadyAnimation>();
         heartParticles.SetActive(false);
         dinnerParticles.SetActive(false);
     }
@@ -37,6 +40,7 @@ public class FemaleParticles : MonoBehaviour
                 else
                     angle = 20f;
                 heartParticles.transform.localEulerAngles = new Vector3(0, angle, 0);
+                ladyAnimation.PlaySendAnimation();
                 heartParticles.SetActive(true);
             }
             else
@@ -46,6 +50,7 @@ public class FemaleParticles : MonoBehaviour
                 else
                     angle = 20f;
                 dinnerParticles.transform.localEulerAngles = new Vector3(0, angle, 0);
+                ladyAnimation.PlaySendAnimation();
                 dinnerParticles.SetActive(true);
             }
             

@@ -13,6 +13,9 @@ public class GenerateCombos : MonoBehaviour
     //Input list
     public List<KeyCode> P1Inputs;
     public List<KeyCode> P2Inputs;
+    //which controller is which player?
+    public bool[] p1Controller;
+    public bool[] p2Controller;
     //Number of elements in combos
     private int p1KeyCount;
     private int p2KeyCount;
@@ -23,13 +26,53 @@ public class GenerateCombos : MonoBehaviour
     public bool p1Keyboard;
     public bool p2Keyboard;
 
+    public bool scaleDifficulty;
     ScoreManager score;
+
+    //Collections of joystick inputs, setable to each player
+    private List<KeyCode>[] joystickButtons;
 
     void Awake()
     {
         score = GetComponent<ScoreManager>();
-
+        ListJoystickButtons();
         Init();
+    }
+
+    void ListJoystickButtons()
+    {
+        joystickButtons = new List<KeyCode>[4];
+        joystickButtons[0] = new List<KeyCode>();
+        joystickButtons[0].Add(KeyCode.Joystick1Button0);
+        joystickButtons[0].Add(KeyCode.Joystick1Button1);
+        joystickButtons[0].Add(KeyCode.Joystick1Button2);
+        joystickButtons[0].Add(KeyCode.Joystick1Button3);
+        joystickButtons[0].Add(KeyCode.Joystick1Button4);
+        joystickButtons[0].Add(KeyCode.Joystick1Button5);
+
+        joystickButtons[1] = new List<KeyCode>();
+        joystickButtons[1].Add(KeyCode.Joystick2Button0);
+        joystickButtons[1].Add(KeyCode.Joystick2Button1);
+        joystickButtons[1].Add(KeyCode.Joystick2Button2);
+        joystickButtons[1].Add(KeyCode.Joystick2Button3);
+        joystickButtons[1].Add(KeyCode.Joystick2Button4);
+        joystickButtons[1].Add(KeyCode.Joystick2Button5);
+
+        joystickButtons[2] = new List<KeyCode>();
+        joystickButtons[2].Add(KeyCode.Joystick3Button0);
+        joystickButtons[2].Add(KeyCode.Joystick3Button1);
+        joystickButtons[2].Add(KeyCode.Joystick3Button2);
+        joystickButtons[2].Add(KeyCode.Joystick3Button3);
+        joystickButtons[2].Add(KeyCode.Joystick3Button4);
+        joystickButtons[2].Add(KeyCode.Joystick3Button5);
+
+        joystickButtons[3] = new List<KeyCode>();
+        joystickButtons[3].Add(KeyCode.Joystick4Button0);
+        joystickButtons[3].Add(KeyCode.Joystick4Button1);
+        joystickButtons[3].Add(KeyCode.Joystick4Button2);
+        joystickButtons[3].Add(KeyCode.Joystick4Button3);
+        joystickButtons[3].Add(KeyCode.Joystick4Button4);
+        joystickButtons[3].Add(KeyCode.Joystick4Button5);
     }
 
     public void Init()
@@ -43,12 +86,22 @@ public class GenerateCombos : MonoBehaviour
         P1Inputs.Add(KeyCode.Alpha2);
         P1Inputs.Add(KeyCode.Alpha3);
         //Joystick
-        P1Inputs.Add(KeyCode.Joystick1Button0);
-        P1Inputs.Add(KeyCode.Joystick1Button1);
-        P1Inputs.Add(KeyCode.Joystick1Button2);
-        P1Inputs.Add(KeyCode.Joystick1Button3);
-        P1Inputs.Add(KeyCode.Joystick1Button4);
-        P1Inputs.Add(KeyCode.Joystick1Button5);
+        for(int i=0; i<p1Controller.Length; i++)
+        {
+            if(p1Controller[i] == true)
+            {
+                for (int j = 0; j < joystickButtons[i].Count; j++)
+                {
+                    P1Inputs.Add(joystickButtons[i][j]);
+                }
+            }
+        }
+        
+        //P1Inputs.Add(KeyCode.Joystick1Button1);
+        //P1Inputs.Add(KeyCode.Joystick1Button2);
+        //P1Inputs.Add(KeyCode.Joystick1Button3);
+        //P1Inputs.Add(KeyCode.Joystick1Button4);
+        //P1Inputs.Add(KeyCode.Joystick1Button5);
 
         //p2 Inputs
         P2Inputs = new List<KeyCode>();
@@ -59,20 +112,47 @@ public class GenerateCombos : MonoBehaviour
         P2Inputs.Add(KeyCode.Alpha8);
         P2Inputs.Add(KeyCode.Alpha9);
         //Joystick
-        P2Inputs.Add(KeyCode.Joystick2Button0);
-        P2Inputs.Add(KeyCode.Joystick2Button1);
-        P2Inputs.Add(KeyCode.Joystick2Button2);
-        P2Inputs.Add(KeyCode.Joystick2Button3);
-        P2Inputs.Add(KeyCode.Joystick2Button4);
-        P2Inputs.Add(KeyCode.Joystick2Button5);
+        //P2Inputs.Add(KeyCode.Joystick2Button0);
+        //P2Inputs.Add(KeyCode.Joystick2Button1);
+        //P2Inputs.Add(KeyCode.Joystick2Button2);
+        //P2Inputs.Add(KeyCode.Joystick2Button3);
+        //P2Inputs.Add(KeyCode.Joystick2Button4);
+        //P2Inputs.Add(KeyCode.Joystick2Button5);
+
+        //Joystick
+        for (int i = 0; i < p2Controller.Length; i++)
+        {
+            if (p2Controller[i] == true)
+            {
+                for (int j = 0; j < joystickButtons[i].Count; j++)
+                {
+                    P2Inputs.Add(joystickButtons[i][j]);
+                }
+            }
+        }
 
         ConfigureDifficulty();
+    }
+
+    public List<KeyCode> AllButtons(int player)
+    {
+        if(player == 0)
+        {
+            return P1Inputs;
+        }
+        else
+        {
+            return P2Inputs;
+        }
     }
 
     // Use this for initialization
     public List<KeyCode> Generate (int player)
     {
-        ConfigureDifficulty();
+        if (scaleDifficulty)
+        {
+            ConfigureDifficulty();
+        }
 
         if (player == 0)
         {

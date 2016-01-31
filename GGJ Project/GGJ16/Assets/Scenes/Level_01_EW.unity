@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAnim: -1
+  player: 0
 --- !u!95 &135442556
 Animator:
   serializedVersion: 3
@@ -489,6 +490,7 @@ MonoBehaviour:
   score: {fileID: 588728670}
   player: 0
   combo: 
+  allButtons: 
   curStep: 0
   isKeyboard: 0
   successChance: 70
@@ -3320,6 +3322,14 @@ Prefab:
       propertyPath: P1Inputs.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Controller.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Controller.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 442578, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 486.42435
@@ -3354,11 +3364,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: p1Keyboard
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: p2Keyboard
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: P2Inputs.Array.data[4]
@@ -3436,6 +3446,38 @@ Prefab:
       propertyPath: p2
       value: 
       objectReference: {fileID: 1726529525}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Controller.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Controller.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Controller.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Controller.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Controller.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Controller.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Controller.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Controller.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
   m_IsPrefabParent: 0
@@ -4030,6 +4072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAnim: -1
+  player: 0
 --- !u!95 &1665279355
 Animator:
   serializedVersion: 3
@@ -4221,6 +4264,7 @@ MonoBehaviour:
   score: {fileID: 588728670}
   player: 1
   combo: 
+  allButtons: 
   curStep: 0
   isKeyboard: 0
   successChance: 70

@@ -11,6 +11,7 @@ public class SpiderCombo : MonoBehaviour
     public ScoreManager score;
     public int player;
     public List<KeyCode> combo;
+    public List<KeyCode> allButtons;
     private float animationDelay = 1.5f;
     private float timer;
     [HideInInspector]
@@ -42,6 +43,7 @@ public class SpiderCombo : MonoBehaviour
         animationController = transform.GetChild(0).GetComponent<AnimationController>();
         StartCoroutine("NewCombo",false);
         SetAi();
+        allButtons = gen.AllButtons(player);
 	}
 
     void OnGUI()
@@ -58,7 +60,24 @@ public class SpiderCombo : MonoBehaviour
     {
         if (!isKeyboard)
         {
-            if (player == 0)
+            if(Input.GetKeyDown(combo[curStep]))
+            {
+                Debug.Log("Success");
+                keyPress = combo[curStep];
+            }
+            else
+            {
+                for(int i = 0; i < allButtons.Count; i++)
+                {
+                    if (Input.GetKeyDown(allButtons[i]))
+                    {
+                        Debug.Log("Fail");
+                        keyPress = allButtons[i];
+                    }
+                }
+            }
+
+            /*if (player == 0)
             {
                 if (Input.GetKeyDown(KeyCode.Joystick1Button0))
                 {
@@ -111,7 +130,7 @@ public class SpiderCombo : MonoBehaviour
                 {
                     keyPress = KeyCode.Joystick2Button5;
                 }
-            }
+            }*/
         }
 
         CheckInput();
