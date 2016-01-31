@@ -8,6 +8,8 @@ public class MenuSystem : MonoBehaviour
     public SpiderCombo p1;
     public SpiderCombo p2;
     public GameObject menuUi;
+    public GameObject beginMenu;
+   
 	private ToggleButton[] menuToggles;
 	// Use this for initialization
 	void Start ()
@@ -44,7 +46,7 @@ public class MenuSystem : MonoBehaviour
         else
         {
             gen.p2Keyboard = !gen.p2Keyboard;
-			menuToggles[3].bToggle = gen.p2Keyboard;
+			menuToggles[4].bToggle = gen.p2Keyboard;
             Debug.Log(gen.p2Keyboard.ToString());
         }
     }
@@ -60,7 +62,7 @@ public class MenuSystem : MonoBehaviour
         else
         {
             p2.isAi = !p2.isAi;
-			menuToggles[2].bToggle = p2.isAi;
+			menuToggles[3].bToggle = p2.isAi;
             Debug.Log(p2.isAi.ToString());
         }
     }
@@ -69,6 +71,6 @@ public class MenuSystem : MonoBehaviour
     {
         p1.enabled = true;
         p2.enabled = true;
-        //Destroy(menuUi);
+        Destroy(beginMenu);
     }
 }

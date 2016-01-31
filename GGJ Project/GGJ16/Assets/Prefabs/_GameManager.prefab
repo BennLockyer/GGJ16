@@ -44,8 +44,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   P1Inputs: 
   P2Inputs: 
+  p1Controller: 
+  p2Controller: 
   p1Keyboard: 1
   p2Keyboard: 1
+  scaleDifficulty: 0
 --- !u!114 &11473936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -61,6 +64,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   menuUi: {fileID: 0}
+  beginMenu: {fileID: 0}
 --- !u!114 &11480232
 MonoBehaviour:
   m_ObjectHideFlags: 1
