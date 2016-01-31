@@ -12,8 +12,6 @@ GameObject:
   - 114: {fileID: 11456506}
   - 114: {fileID: 11480232}
   - 114: {fileID: 11473936}
-  - 114: {fileID: 11427116}
-  - 114: {fileID: 11481232}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: GameManager
@@ -28,27 +26,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 486.42435, y: 179.38411, z: 0}
+  m_LocalPosition: {x: 486.42435, y: 179.38411, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11427116
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fa3995b6f9c5f7488762a886c11e88c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leaf:
-  - {fileID: 0}
-  - {fileID: 0}
-  redColor: {r: 0.38431373, g: 0.03137255, b: 0.03137255, a: 1}
-  time: 1
 --- !u!114 &11456506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,11 +44,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   P1Inputs: 
   P2Inputs: 
-  p1Controller: 01000000
-  p2Controller: 00010000
+  p1Controller: 
+  p2Controller: 
   p1Keyboard: 1
   p2Keyboard: 1
-  scaleDifficulty: 1
+  scaleDifficulty: 0
 --- !u!114 &11473936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,6 +64,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   menuUi: {fileID: 0}
+  beginMenu: {fileID: 0}
 --- !u!114 &11480232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0661537a816a4db3899badc44b9e140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyCodeList: 5e0100005f010000600100006101000062010000630100007201000073010000740100007501000076010000770100007700000061000000730000007a000000690000006a0000006b0000006d00000032000000330000003800000039000000
+  keyCodeList: 5e0100005f01000060010000610100006201000063010000720100007301000074010000750100007601000077010000
   spritesList:
   - {fileID: 21300000, guid: 6f267f1182aa1d846bdff7e409e61c4f, type: 3}
   - {fileID: 21300000, guid: 0cd10b5b8701b824e90c1bf52ea45d01, type: 3}
@@ -107,38 +90,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: af010ad051500e64a8fae5912fd41457, type: 3}
   - {fileID: 21300000, guid: e3745ab972d24f84698fd62448c08485, type: 3}
   - {fileID: 21300000, guid: 9026937fcf49de248b509fd798b0ac79, type: 3}
-  - {fileID: 21300000, guid: 3b3c343f1f1f0744097ae612ca165763, type: 3}
-  - {fileID: 21300000, guid: a0a32fa5d5963ba4488b635ed4eb2da1, type: 3}
-  - {fileID: 21300000, guid: dcbf929507088244ebedc7fe92f6b931, type: 3}
-  - {fileID: 21300000, guid: 7302871d07b11de408cddddd5ab6d602, type: 3}
-  - {fileID: 21300000, guid: d116443962bade74b8be436ceb4007cb, type: 3}
-  - {fileID: 21300000, guid: a26a10a0b981dad44816c51cd96e7c4d, type: 3}
-  - {fileID: 21300000, guid: 9a8939c2efeb0a64f9a77b8270ca8a66, type: 3}
-  - {fileID: 21300000, guid: a58d028846db04d4c8532a8f28daa4f5, type: 3}
-  - {fileID: 21300000, guid: d4ee8853713daf043be64949c3000f90, type: 3}
-  - {fileID: 21300000, guid: 08da3c5d3c1a1cb41b4190fc99d9cbe3, type: 3}
-  - {fileID: 21300000, guid: 27c2bbe1e1fe60748bf5603cd496e74c, type: 3}
-  - {fileID: 21300000, guid: 061787548f097b44d9dff9e8f37d1f8c, type: 3}
---- !u!114 &11481232
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f46814b7869cd940b88286de4f1a13a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spiderOne: {fileID: 0}
-  spiderTwo: {fileID: 0}
-  UIObject: {fileID: 0}
-  heartParticles: {fileID: 0}
-  dinnerParticles: {fileID: 0}
-  ladySpider: {fileID: 0}
-  playerOne: {fileID: 0}
-  playerTwo: {fileID: 0}
-  winParticles: {fileID: 0}
 --- !u!114 &11492234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6835a6e472aa3784f9179f6d4c3e4442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScore: 500
+  targetScore: 15000
   correctButtonScore: 2
   correctComboScore: 10
   currentScore: 0
