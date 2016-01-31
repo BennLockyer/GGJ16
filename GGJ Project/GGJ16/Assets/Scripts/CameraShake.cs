@@ -59,6 +59,5 @@ public class CameraShake : MonoBehaviour
 		shake_decay = decay;
 		isShaking = true;
         shakeTime = Time.time;
-        Time.timeScale = 0;
 	}
 }
