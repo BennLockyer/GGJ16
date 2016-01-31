@@ -255,7 +255,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 21677912}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8444b83c1379f745be13022d03ceb38, type: 3}
   m_Name: 
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 135442553}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0126169b4c91cf347a4c686da27cd75d, type: 3}
   m_Name: 
@@ -4066,7 +4066,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1665279352}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0126169b4c91cf347a4c686da27cd75d, type: 3}
   m_Name: 
@@ -4259,7 +4259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9a894e761790842a00ac3a789e8f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAi: 0
+  isAi: 1
   gen: {fileID: 588728669}
   score: {fileID: 588728670}
   player: 1

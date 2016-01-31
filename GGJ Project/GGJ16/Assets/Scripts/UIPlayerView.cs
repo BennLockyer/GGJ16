@@ -66,7 +66,7 @@ public class UIPlayerView : MonoBehaviour
 			GameObject obj = singleComboPool.GetAvailableObject();
 			obj.transform.SetParent(tCombo);
 			obj.SetActive(true);
-
+            Debug.Log(playerCombo.player.ToString() + " " + "UI OUTPUT" + i.ToString() + ": " + keyCombo[i].ToString());
 			if(keyMap.HaveKey(keyCombo[i]))
 			{
 				obj.GetComponent<Image>().sprite = keyMap.GetSprite(keyCombo[i]);

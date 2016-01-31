@@ -502,6 +502,7 @@ MonoBehaviour:
   score: {fileID: 588728670}
   player: 0
   combo: 
+  allButtons: 
   curStep: 0
   isKeyboard: 0
   successChance: 70
@@ -3568,7 +3569,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: targetScore
-      value: 1500
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: correctButtonScore
@@ -3577,6 +3578,10 @@ Prefab:
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: correctComboScore
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: scaleDifficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
@@ -4311,6 +4316,7 @@ MonoBehaviour:
   score: {fileID: 588728670}
   player: 1
   combo: 
+  allButtons: 
   curStep: 0
   isKeyboard: 0
   successChance: 70
