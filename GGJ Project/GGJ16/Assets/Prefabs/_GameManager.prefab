@@ -64,8 +64,8 @@ MonoBehaviour:
   P2Inputs: 
   p1Controller: 01000000
   p2Controller: 00010000
-  p1Keyboard: 0
-  p2Keyboard: 0
+  p1Keyboard: 1
+  p2Keyboard: 1
   scaleDifficulty: 1
 --- !u!114 &11473936
 MonoBehaviour:
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6835a6e472aa3784f9179f6d4c3e4442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScore: 1000
+  targetScore: 500
   correctButtonScore: 2
   correctComboScore: 10
   currentScore: 0
