@@ -232,13 +232,22 @@ public class SpiderCombo : MonoBehaviour
             yield return new WaitForSeconds(animationDelay);
         }
         combo = gen.Generate(player);
+        if (UnityEditor.Selection.activeGameObject == this.gameObject)
+        {
+            for (int i = 0; i < combo.Count; i++)
+            {
+                Debug.Log(combo[i].ToString());
+            }
+        }
+
         curStep = 0;
         timer = 0;
-        acceptInput = true;
         //Debug.Log("Return");
 
         //set if we're using keyboard or not depending on our player
         isKeyboard = player == 0 ? gen.p1Keyboard : gen.p2Keyboard;
         myUI.DisplayCombo(combo);
+        yield return new WaitForSeconds(0.5f);
+        acceptInput = true;
     }
 }

@@ -19,9 +19,6 @@ public class GenerateCombos : MonoBehaviour
     //Range of elements in combos
     private int p1KeyRange;
     private int p2KeyRange;
-    //Difficulty level for players
-    private int p1Difficulty;
-    private int p2Difficulty;
     //Keyboard?
     public bool p1Keyboard;
     public bool p2Keyboard;
@@ -106,7 +103,6 @@ public class GenerateCombos : MonoBehaviour
     private void ConfigureDifficulty()
     {
         //get the range from the score controller
-        float upperLimit = score.targetScore;
         float lowerLimit = -score.targetScore;
         float div = (score.targetScore * 2) * 0.2f;
         //and the current score
@@ -115,10 +111,7 @@ public class GenerateCombos : MonoBehaviour
         //compare the current score to divisions of 5 within the score range, shift difficulties accordingly
         if(currentScore < lowerLimit + div)
         {
-            Debug.Log("lowest");
-            p1Difficulty = 1;
-            p2Difficulty = 5;
-
+            //Debug.Log("lowest");
             p1KeyCount = 4;
             p1KeyRange = 4;
 
@@ -127,10 +120,7 @@ public class GenerateCombos : MonoBehaviour
         }
         else if(currentScore < lowerLimit + (div * 2))
         {
-            Debug.Log("low");
-            p1Difficulty = 2;
-            p2Difficulty = 4;
-
+            //Debug.Log("low");
             p1KeyCount = 5;
             p1KeyRange = 4;
 
@@ -139,10 +129,7 @@ public class GenerateCombos : MonoBehaviour
         }
         else if(currentScore < lowerLimit + (div * 3))
         {
-            Debug.Log("mid");
-            p1Difficulty = 3;
-            p2Difficulty = 3;
-
+            //Debug.Log("mid");
             p1KeyCount = 6;
             p1KeyRange = 4;
 
@@ -151,10 +138,7 @@ public class GenerateCombos : MonoBehaviour
         }
         else if (currentScore < lowerLimit + (div * 4))
         {
-            Debug.Log("high");
-            p1Difficulty = 4;
-            p2Difficulty = 2;
-
+            //Debug.Log("high");
             p1KeyCount = 7;
             p1KeyRange = 4;
 
@@ -163,10 +147,7 @@ public class GenerateCombos : MonoBehaviour
         }
         else
         {
-            Debug.Log("highest");
-            p1Difficulty = 5;
-            p2Difficulty = 1;
-
+            //Debug.Log("highest");
             p1KeyCount = 8;
             p1KeyRange = 6;
 
