@@ -112,14 +112,38 @@ public class GenerateCombos : MonoBehaviour
         P2Inputs.Add(KeyCode.Alpha8);
         P2Inputs.Add(KeyCode.Alpha9);
         //Joystick
-        P2Inputs.Add(KeyCode.Joystick2Button0);
-        P2Inputs.Add(KeyCode.Joystick2Button1);
-        P2Inputs.Add(KeyCode.Joystick2Button2);
-        P2Inputs.Add(KeyCode.Joystick2Button3);
-        P2Inputs.Add(KeyCode.Joystick2Button4);
-        P2Inputs.Add(KeyCode.Joystick2Button5);
+        //P2Inputs.Add(KeyCode.Joystick2Button0);
+        //P2Inputs.Add(KeyCode.Joystick2Button1);
+        //P2Inputs.Add(KeyCode.Joystick2Button2);
+        //P2Inputs.Add(KeyCode.Joystick2Button3);
+        //P2Inputs.Add(KeyCode.Joystick2Button4);
+        //P2Inputs.Add(KeyCode.Joystick2Button5);
+
+        //Joystick
+        for (int i = 0; i < p2Controller.Length; i++)
+        {
+            if (p2Controller[i] == true)
+            {
+                for (int j = 0; j < joystickButtons[i].Count; j++)
+                {
+                    P2Inputs.Add(joystickButtons[i][j]);
+                }
+            }
+        }
 
         ConfigureDifficulty();
+    }
+
+    public List<KeyCode> AllButtons(int player)
+    {
+        if(player == 0)
+        {
+            return P1Inputs;
+        }
+        else
+        {
+            return P2Inputs;
+        }
     }
 
     // Use this for initialization
