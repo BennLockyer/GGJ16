@@ -1188,7 +1188,7 @@ GameObject:
   - 114: {fileID: 661221513}
   m_Layer: 0
   m_Name: _AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3474,6 +3474,14 @@ Prefab:
       propertyPath: P1Inputs.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Controller.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Controller.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 442578, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 486.42435
@@ -3508,11 +3516,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: p1Keyboard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: p2Keyboard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: P2Inputs.Array.data[4]
@@ -3568,7 +3576,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: targetScore
-      value: 1500
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: correctButtonScore
@@ -3577,6 +3585,18 @@ Prefab:
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: correctComboScore
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p1Controller.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: p2Controller.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456506, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
+      propertyPath: scaleDifficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}

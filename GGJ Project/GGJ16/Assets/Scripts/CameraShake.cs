@@ -12,24 +12,13 @@ public class CameraShake : MonoBehaviour
 	private bool isShaking;
 
     private float shakeTime;
-    private bool isPaused;
 	
 	void Update()
 	{
         
 		if(shake_intensity > 0)
 		{
-            if (isPaused)
-            {
-                Debug.Log("PAUSED");
-                if (Time.unscaledTime >= shakeTime + 1.0f)
-                {
-                    Debug.Log("Resetting time scale");
-                    isPaused = false;
-                    Time.timeScale = 1;
-                }
-            }
-            else
+
             {
                 //			Vector3 shake = originPosition + Random.insideUnitSphere * shake_intensity;
                 transform.position = originPosition + Random.insideUnitSphere * shake_intensity;
@@ -69,7 +58,6 @@ public class CameraShake : MonoBehaviour
 		shake_intensity = intensity;
 		shake_decay = decay;
 		isShaking = true;
-        isPaused = true;
         shakeTime = Time.time;
         Time.timeScale = 0;
 	}

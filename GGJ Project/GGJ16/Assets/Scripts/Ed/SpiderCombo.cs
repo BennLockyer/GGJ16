@@ -35,11 +35,13 @@ public class SpiderCombo : MonoBehaviour
     public UIPlayerView myUI;
 
     private AnimationController animationController;
+    private AudioManager audioManager;
 
 	// Use this for initialization
 	void Start ()
     {
         animationController = transform.GetChild(0).GetComponent<AnimationController>();
+        audioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>();
         StartCoroutine("NewCombo",false);
         SetAi();
 	}
@@ -138,10 +140,13 @@ public class SpiderCombo : MonoBehaviour
                         //Successful step
                         curStep++;
                         score.HitCorrectButton(player);
+                        int random = UnityEngine.Random.Range(0, 2);
+                        audioManager.PlaySFX(random, false, 1.0f);
                         //Successful combo
                         if (curStep == combo.Count)
                         {
                             score.CompleteCombo(player, timer);
+                            audioManager.PlaySFX(3, true, 1.0f);
                             PlayAnimation(true);
                             StartCoroutine("NewCombo",true);
                         }
@@ -151,6 +156,7 @@ public class SpiderCombo : MonoBehaviour
                     {
                         //Missed step
                         score.BreakCombo(player);
+                        audioManager.PlaySFX(2, true, 1.0f);
                         PlayAnimation(false);
                         StartCoroutine("NewCombo", true);
                         keyPress = KeyCode.None;
@@ -187,10 +193,13 @@ public class SpiderCombo : MonoBehaviour
                 //Successful step
                 curStep++;
                 score.HitCorrectButton(player);
+                int random = UnityEngine.Random.Range(0, 2);
+                audioManager.PlaySFX(random, false, 1.0f);
                 //Successful combo
                 if (curStep == combo.Count)
                 {
                     score.CompleteCombo(player, timer);
+                    audioManager.PlaySFX(3, true, 1.0f);
                     PlayAnimation(true);
                     StartCoroutine("NewCombo",true);
                 }
@@ -201,6 +210,7 @@ public class SpiderCombo : MonoBehaviour
                 //Missed step
                 score.BreakCombo(player);
                 PlayAnimation(false);
+                audioManager.PlaySFX(2, true, 1.0f);
                 StartCoroutine("NewCombo", true);
                 keyPress = KeyCode.None;
             }
