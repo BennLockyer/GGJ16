@@ -47,6 +47,7 @@ public class TitleHandler : MonoBehaviour
     public void StartGame()
     {
         //Load relevant level
+        Application.LoadLevel(1);
     }
     public void ExitGame()
     {
