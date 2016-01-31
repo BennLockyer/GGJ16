@@ -275,6 +275,7 @@ public class SpiderCombo : MonoBehaviour
 
         //set if we're using keyboard or not depending on our player
         isKeyboard = player == 0 ? gen.p1Keyboard : gen.p2Keyboard;
+        yield return null;
         myUI.DisplayCombo(combo);
         yield return new WaitForSeconds(0.5f);
         acceptInput = true;

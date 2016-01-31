@@ -6,6 +6,8 @@ public class WinState : MonoBehaviour
     public SpiderCombo spiderOne;
     public SpiderCombo spiderTwo;
     public GameObject UIObject;
+    public GameObject heartParticles;
+    public GameObject dinnerParticles;
 
     public Transform ladySpider;
 
@@ -34,6 +36,7 @@ public class WinState : MonoBehaviour
         spiderOne.enabled = false;
         spiderTwo.enabled = false;
         UIObject.SetActive(false);
+        ladySpider.GetComponent<FemaleParticles>().enabled = false;
 
         if (winner == 0)
         {
@@ -48,14 +51,16 @@ public class WinState : MonoBehaviour
         ladySpider.LookAt(target);
 
         yield return new WaitForSeconds(1.0f);
-
+        ladySpider.transform.GetChild(0).GetComponent<LadyAnimation>().PlayAttackAnimation();
+        yield return new WaitForSeconds(0.4f);
         ladyPos = ladySpider.position;
         startTime = Time.time;
         distance = Vector3.Distance(ladyPos, target);
         isMoving = true;
-        ladySpider.transform.GetChild(0).GetComponent<LadyAnimation>().PlayAttackAnimation();
+       
 
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
+        isMoving = false;
 
         if (winner == 0)
         {
@@ -67,13 +72,14 @@ public class WinState : MonoBehaviour
         }
 
         ladySpider.LookAt(target);
+        ladySpider.localEulerAngles = new Vector3(ladySpider.eulerAngles.x, ladySpider.eulerAngles.y, -20f);
 
         winParticles.transform.position = ladySpider.transform.position;
         float angle = 0;
         if (winner == 0)
-            angle = 90f;
-        else
             angle = -90f;
+        else
+            angle = 90f;
         winParticles.transform.eulerAngles = new Vector3(0, angle, 0);
         winParticles.SetActive(true);
 

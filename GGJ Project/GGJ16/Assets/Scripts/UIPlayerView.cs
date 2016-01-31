@@ -47,7 +47,8 @@ public class UIPlayerView : MonoBehaviour
 
 	public void DisplayCombo(List<KeyCode> keys)
 	{
-		KeyCode[] keyCombo = keys.ToArray();
+        //KeyCode[] keyCombo = keys.ToArray();
+        List<KeyCode> keyCombo = keys;
         if (keyComboContainer == null) keyComboContainer = transform.Find("ComboPanel").gameObject;
         Transform tCombo = keyComboContainer.transform;
 
@@ -57,11 +58,13 @@ public class UIPlayerView : MonoBehaviour
 			GameObject obj = tCombo.GetChild(i).gameObject;
 			// This is so fucking retarded - GetComponentInChildren get component from the parent as well
 			obj.transform.GetComponentsInChildren<Image>(true)[1].gameObject.SetActive(false);
-			obj.SetActive(false);
+            obj.SetActive(false);
 		}
 
-		// Populate Key Combo Bar
-		for(int i = 0; i < keyCombo.Length; i++) 
+        tCombo.DetachChildren();
+
+        // Populate Key Combo Bar
+        for (int i = 0; i < keyCombo.Count; i++) 
 		{
 			GameObject obj = singleComboPool.GetAvailableObject();
 			obj.transform.SetParent(tCombo);
@@ -69,7 +72,8 @@ public class UIPlayerView : MonoBehaviour
             Debug.Log(playerCombo.player.ToString() + " " + "UI OUTPUT" + i.ToString() + ": " + keyCombo[i].ToString());
 			if(keyMap.HaveKey(keyCombo[i]))
 			{
-				obj.GetComponent<Image>().sprite = keyMap.GetSprite(keyCombo[i]);
+                obj.GetComponent<Image>().sprite = null;
+                obj.GetComponent<Image>().sprite = keyMap.GetSprite(keyCombo[i]);
 				obj.GetComponentInChildren<Text>().text = string.Empty;
 			}
 			else

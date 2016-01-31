@@ -4955,6 +4955,8 @@ MonoBehaviour:
   spiderOne: {fileID: 147982468}
   spiderTwo: {fileID: 1726529525}
   UIObject: {fileID: 1442319582}
+  heartParticles: {fileID: 0}
+  dinnerParticles: {fileID: 0}
   ladySpider: {fileID: 21677916}
   playerOne: {fileID: 147982467}
   playerTwo: {fileID: 1726529524}
@@ -5151,7 +5153,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: targetScore
-      value: 250
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 11492234, guid: 592a9928b3d7d674ea999f8f38682c7b, type: 2}
       propertyPath: correctButtonScore
