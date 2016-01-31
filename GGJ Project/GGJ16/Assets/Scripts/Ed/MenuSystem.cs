@@ -18,7 +18,11 @@ public class MenuSystem : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-
+    	// Check if escape is pressed to toggle pause menu
+    	if(Input.GetKeyDown(KeyCode.Escape))
+    	{
+			menuUi.SetActive(!menuUi.activeInHierarchy);
+    	}
     }
 
     public void TogglePlayerKeyboard(int player)
