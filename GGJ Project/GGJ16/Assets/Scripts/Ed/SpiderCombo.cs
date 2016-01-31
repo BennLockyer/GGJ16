@@ -190,7 +190,11 @@ public class SpiderCombo : MonoBehaviour
     {
         timer += Time.smoothDeltaTime;
 
-        if (!acceptInput) return;
+        if (!acceptInput)
+        {
+            keyPress = KeyCode.Space;
+            return;
+        }
 
         if (isAi)
         {
