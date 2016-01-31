@@ -72,9 +72,11 @@
     <Compile Include="Assets\Scripts\FemaleLookAt.cs" />
     <Compile Include="Assets\Scripts\FemaleParticles.cs" />
     <Compile Include="Assets\Scripts\Keymap.cs" />
+    <Compile Include="Assets\Scripts\LadyAnimation.cs" />
     <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\PunManager.cs" />
     <Compile Include="Assets\Scripts\PunnyText.cs" />
+    <Compile Include="Assets\Scripts\RedLeaf.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\StarPulse.cs" />
     <Compile Include="Assets\Scripts\UIPlayerView.cs" />

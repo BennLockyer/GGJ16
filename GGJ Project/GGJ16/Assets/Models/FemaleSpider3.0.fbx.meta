@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: 1f25bc1ec1783b646b72775162c9efb1
+timeCreated: 1454200063
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Female_Spider1
+    100002: //RootNode
+    100004: L1
+    100006: L1_End
+    100008: L1_Mid
+    100010: L1_Top
+    100012: L2
+    100014: L2_End
+    100016: L2_Mid
+    100018: L2_Top
+    100020: L3
+    100022: L3_End
+    100024: L3_Mid
+    100026: L3_Top
+    100028: L4
+    100030: L4_End
+    100032: L4_Mid
+    100034: L4_TIp
+    100036: L4_Top
+    100038: Leg_System
+    100040: R1
+    100042: R1_End
+    100044: R1_Mid
+    100046: R1_Tip
+    100048: R1_Top
+    100050: R2
+    100052: R2_End
+    100054: R2_Mid
+    100056: R2_Tip
+    100058: R2_Top
+    100060: R3
+    100062: R3_End
+    100064: R3_Mid
+    100066: R3_Top
+    100068: R4
+    100070: R4_End
+    100072: R4_Mid
+    100074: R4_Tip
+    100076: R4_Tip 1
+    100078: R4_Top
+    100080: Root
+    100082: Tail
+    100084: Tail_End
+    100086: Tail_Mid
+    100088: Tail_tip
+    100090: Tail_Top
+    100092: TIP
+    100094: TIP 1
+    100096: TIP 2
+    400000: Female_Spider1
+    400002: //RootNode
+    400004: L1
+    400006: L1_End
+    400008: L1_Mid
+    400010: L1_Top
+    400012: L2
+    400014: L2_End
+    400016: L2_Mid
+    400018: L2_Top
+    400020: L3
+    400022: L3_End
+    400024: L3_Mid
+    400026: L3_Top
+    400028: L4
+    400030: L4_End
+    400032: L4_Mid
+    400034: L4_TIp
+    400036: L4_Top
+    400038: Leg_System
+    400040: R1
+    400042: R1_End
+    400044: R1_Mid
+    400046: R1_Tip
+    400048: R1_Top
+    400050: R2
+    400052: R2_End
+    400054: R2_Mid
+    400056: R2_Tip
+    400058: R2_Top
+    400060: R3
+    400062: R3_End
+    400064: R3_Mid
+    400066: R3_Top
+    400068: R4
+    400070: R4_End
+    400072: R4_Mid
+    400074: R4_Tip
+    400076: R4_Tip 1
+    400078: R4_Top
+    400080: Root
+    400082: Tail
+    400084: Tail_End
+    400086: Tail_Mid
+    400088: Tail_tip
+    400090: Tail_Top
+    400092: TIP
+    400094: TIP 1
+    400096: TIP 2
+    4300000: Female_Spider1
+    7400000: Idle
+    7400002: Sending
+    7400004: Attack
+    9500000: //RootNode
+    13700000: Female_Spider1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Female_Spider1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Leg_System
+        weight: 1
+      - path: Root/Leg_System/L1
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid/L1_End
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid/L1_End/TIP
+        weight: 1
+      - path: Root/Leg_System/L2
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid/L2_End
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid/L2_End/TIP 1
+        weight: 1
+      - path: Root/Leg_System/L3
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid/L3_End
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid/L3_End/TIP 2
+        weight: 1
+      - path: Root/Leg_System/L4
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid/L4_End
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid/L4_End/L4_TIp
+        weight: 1
+      - path: Root/Leg_System/R1
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid/R1_End
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid/R1_End/R1_Tip
+        weight: 1
+      - path: Root/Leg_System/R2
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid/R2_End
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid/R2_End/R2_Tip
+        weight: 1
+      - path: Root/Leg_System/R3
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid/R3_End
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid/R3_End/R4_Tip
+        weight: 1
+      - path: Root/Leg_System/R4
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid/R4_End
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid/R4_End/R4_Tip 1
+        weight: 1
+      - path: Root/Leg_System/Tail
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid/Tail_End/Tail_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Sending
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Female_Spider1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Leg_System
+        weight: 1
+      - path: Root/Leg_System/L1
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid/L1_End
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid/L1_End/TIP
+        weight: 1
+      - path: Root/Leg_System/L2
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid/L2_End
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid/L2_End/TIP 1
+        weight: 1
+      - path: Root/Leg_System/L3
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid/L3_End
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid/L3_End/TIP 2
+        weight: 1
+      - path: Root/Leg_System/L4
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid/L4_End
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid/L4_End/L4_TIp
+        weight: 1
+      - path: Root/Leg_System/R1
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid/R1_End
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid/R1_End/R1_Tip
+        weight: 1
+      - path: Root/Leg_System/R2
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid/R2_End
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid/R2_End/R2_Tip
+        weight: 1
+      - path: Root/Leg_System/R3
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid/R3_End
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid/R3_End/R4_Tip
+        weight: 1
+      - path: Root/Leg_System/R4
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid/R4_End
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid/R4_End/R4_Tip 1
+        weight: 1
+      - path: Root/Leg_System/Tail
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid/Tail_End/Tail_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Female_Spider1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Leg_System
+        weight: 1
+      - path: Root/Leg_System/L1
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid/L1_End
+        weight: 1
+      - path: Root/Leg_System/L1/L1_Top/L1_Mid/L1_End/TIP
+        weight: 1
+      - path: Root/Leg_System/L2
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid/L2_End
+        weight: 1
+      - path: Root/Leg_System/L2/L2_Top/L2_Mid/L2_End/TIP 1
+        weight: 1
+      - path: Root/Leg_System/L3
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid/L3_End
+        weight: 1
+      - path: Root/Leg_System/L3/L3_Top/L3_Mid/L3_End/TIP 2
+        weight: 1
+      - path: Root/Leg_System/L4
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid/L4_End
+        weight: 1
+      - path: Root/Leg_System/L4/L4_Top/L4_Mid/L4_End/L4_TIp
+        weight: 1
+      - path: Root/Leg_System/R1
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid/R1_End
+        weight: 1
+      - path: Root/Leg_System/R1/R1_Top/R1_Mid/R1_End/R1_Tip
+        weight: 1
+      - path: Root/Leg_System/R2
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid/R2_End
+        weight: 1
+      - path: Root/Leg_System/R2/R2_Top/R2_Mid/R2_End/R2_Tip
+        weight: 1
+      - path: Root/Leg_System/R3
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid/R3_End
+        weight: 1
+      - path: Root/Leg_System/R3/R3_Top/R3_Mid/R3_End/R4_Tip
+        weight: 1
+      - path: Root/Leg_System/R4
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid/R4_End
+        weight: 1
+      - path: Root/Leg_System/R4/R4_Top/R4_Mid/R4_End/R4_Tip 1
+        weight: 1
+      - path: Root/Leg_System/Tail
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid/Tail_End
+        weight: 1
+      - path: Root/Leg_System/Tail/Tail_Top/Tail_Mid/Tail_End/Tail_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

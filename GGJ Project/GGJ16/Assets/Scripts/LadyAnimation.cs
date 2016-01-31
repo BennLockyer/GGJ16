@@ -1,19 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AnimationController : MonoBehaviour
+public class LadyAnimation : MonoBehaviour
 {
     private Animator anim;
     public int currentAnim;
-    public int player;
-
-    private RedLeaf redLeaf;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
-        redLeaf = GameObject.FindWithTag("GameManager").GetComponent<RedLeaf>();
-        currentAnim = -1;
+        currentAnim = 0;
     }
 
     void Update()
@@ -21,17 +17,14 @@ public class AnimationController : MonoBehaviour
         anim.SetInteger("AnimState", currentAnim);
     }
 
-    public void PlayRandomAnimation()
+    public void PlaySendAnimation()
     {
-        int newAnimation = Random.Range(1, 7);
-        StartCoroutine("PlayAnimation", newAnimation);
+        StartCoroutine("PlayAnimation", 1);
     }
-    public void PlayFailAnimation()
+
+    public void PlayAttackAnimation()
     {
-        Debug.Log("Playing Fail");
-        Camera.main.GetComponent<CameraShake>().MediumShake();
-        redLeaf.FlashLeaf(player);
-        StartCoroutine("PlayAnimation", 7);
+        StartCoroutine("PlayAnimation", 2);
     }
 
     IEnumerator PlayAnimation(int animNumber)
@@ -44,7 +37,7 @@ public class AnimationController : MonoBehaviour
             info = anim.GetCurrentAnimatorStateInfo(0);
         }
 
-        currentAnim = -1;
+        currentAnim = 0;
     }
 
 }
