@@ -345,6 +345,7 @@ MonoBehaviour:
   successChance: 0
   baseStepTime: 0
   stepTimeVariance: 0
+  myUI: {fileID: 1451775528}
 --- !u!1 &190628152
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +557,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &395042522 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11438514, guid: e7388b048711d2d4889bde33a09a64f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1579294380}
+  m_Script: {fileID: 11500000, guid: 570e71126f4b94340ab07fe057127394, type: 3}
 --- !u!1 &700050395
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +987,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400302875}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1451775528 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11409144, guid: e7388b048711d2d4889bde33a09a64f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1579294380}
+  m_Script: {fileID: 11500000, guid: 570e71126f4b94340ab07fe057127394, type: 3}
 --- !u!1001 &1579294380
 Prefab:
   m_ObjectHideFlags: 0
@@ -1325,6 +1338,7 @@ MonoBehaviour:
   successChance: 0
   baseStepTime: 0
   stepTimeVariance: 0
+  myUI: {fileID: 395042522}
 --- !u!1 &1834816699
 GameObject:
   m_ObjectHideFlags: 0
