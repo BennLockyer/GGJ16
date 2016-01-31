@@ -15,7 +15,7 @@ public class MenuSystem : MonoBehaviour
 	void Start ()
     {
         //show UI elements
-		menuToggles = menuUi.transform.Find("PauseMenuPanel/ButtonList").GetComponentsInChildren<ToggleButton>();
+		menuToggles = beginMenu.transform.Find("Panel").GetComponentsInChildren<ToggleButton>();
 	}
 	
 	// Update is called once per frame
@@ -46,7 +46,7 @@ public class MenuSystem : MonoBehaviour
         else
         {
             gen.p2Keyboard = !gen.p2Keyboard;
-			menuToggles[4].bToggle = gen.p2Keyboard;
+			menuToggles[3].bToggle = gen.p2Keyboard;
             Debug.Log(gen.p2Keyboard.ToString());
         }
     }
@@ -62,7 +62,7 @@ public class MenuSystem : MonoBehaviour
         else
         {
             p2.isAi = !p2.isAi;
-			menuToggles[3].bToggle = p2.isAi;
+			menuToggles[2].bToggle = p2.isAi;
             Debug.Log(p2.isAi.ToString());
         }
     }

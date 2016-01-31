@@ -63,6 +63,8 @@ public class AudioManager : MonoBehaviour
 			else
 				prioritySources.Add(au);
 		}
+
+        PlayMusic(0);
 	}
 	
 	void Start()

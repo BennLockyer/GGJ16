@@ -259,9 +259,9 @@ public class SpiderCombo : MonoBehaviour
     //get us a new combo, pass timer to help calculate score
     IEnumerator NewCombo(bool needsDelay)
     {
+        acceptInput = false;
         if (needsDelay)
         {
-            acceptInput = false;
             yield return new WaitForSeconds(animationDelay);
         }
         combo = gen.Generate(player);
