@@ -16,7 +16,11 @@ public class MenuSystem : MonoBehaviour
     {
         //show UI elements
 		menuToggles = beginMenu.transform.Find("Panel").GetComponentsInChildren<ToggleButton>();
-	}
+        menuToggles[0].bToggle = gen.p1Keyboard;
+        menuToggles[1].bToggle = p1.isAi;
+        menuToggles[2].bToggle = p2.isAi;
+        menuToggles[3].bToggle = gen.p2Keyboard;
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -24,8 +28,9 @@ public class MenuSystem : MonoBehaviour
     	// Check if escape is pressed to toggle pause menu
     	if(Input.GetKeyDown(KeyCode.Escape))
     	{
-			menuUi.SetActive(!menuUi.activeInHierarchy);
-			Time.timeScale = (menuUi.activeInHierarchy) ? 0 : 1;
+            //menuUi.SetActive(!menuUi.activeInHierarchy);
+            //Time.timeScale = (menuUi.activeInHierarchy) ? 0 : 1;
+            Application.LoadLevel(0);
     	}
     }
 

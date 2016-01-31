@@ -265,13 +265,6 @@ public class SpiderCombo : MonoBehaviour
             yield return new WaitForSeconds(animationDelay);
         }
         combo = gen.Generate(player);
-        if (UnityEditor.Selection.activeGameObject == this.gameObject)
-        {
-            for (int i = 0; i < combo.Count; i++)
-            {
-                Debug.Log(combo[i].ToString());
-            }
-        }
 
         curStep = 0;
         timer = 0;
