@@ -408,9 +408,9 @@ MonoBehaviour:
   allButtons: 
   curStep: 0
   isKeyboard: 0
-  successChance: 70
-  baseStepTime: 0.89
-  stepTimeVariance: 1.39
+  successChance: 95
+  baseStepTime: 0.25
+  stepTimeVariance: 0.5
   myUI: {fileID: 75481770}
 --- !u!1 &190628152
 GameObject:
@@ -5324,9 +5324,9 @@ MonoBehaviour:
   allButtons: 
   curStep: 0
   isKeyboard: 0
-  successChance: 70
-  baseStepTime: 0.89
-  stepTimeVariance: 1.39
+  successChance: 95
+  baseStepTime: 0.25
+  stepTimeVariance: 0.5
   myUI: {fileID: 2122806257}
 --- !u!1 &1834816699
 GameObject:

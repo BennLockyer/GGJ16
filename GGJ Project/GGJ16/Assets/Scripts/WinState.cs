@@ -37,6 +37,7 @@ public class WinState : MonoBehaviour
         spiderTwo.enabled = false;
         UIObject.SetActive(false);
         ladySpider.GetComponent<FemaleParticles>().enabled = false;
+        ladySpider.GetComponent<FemaleLookAt>().runLookat = false;
 
         if (winner == 0)
         {
